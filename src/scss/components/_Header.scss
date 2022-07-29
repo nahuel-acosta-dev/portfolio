@@ -1,0 +1,18 @@
+.header{
+    .header__navbar{
+        background-color: transparent;
+    }
+    .header__navbar--links{
+        border-radius: 30px;
+        &:hover{
+            box-shadow: 0 0 20px $white-shadow;
+        }
+            .header__link{
+                color: black;
+                border-radius: 30px;
+                &:hover{
+                    text-shadow: 0 0 30px $white-shadow, 0 0 30px $white-shadow, 0 0 30px $white-shadow;
+                }
+            }
+    }
+}
