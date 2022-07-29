@@ -6,10 +6,21 @@ const Home = () =>{
 
     return(
         <section className="home">
-            <Row>
-                <Col md={7}></Col>
-                <Col md={5}>
-                    <div className="home__image">
+            <Row className="height_maximum">
+                <Col md={7}>
+                    <Row>
+                        <Col md={2}></Col>
+                        <Col>
+                            <div className="home__title">
+                                
+                            </div>
+                        </Col>
+                        <Col md={1}></Col>
+                    </Row>
+                </Col>
+                <Col md={5} className="height_maximum">
+                    <div className="home__image height_maximum">
+
                     </div>
                 </Col>
             </Row>
