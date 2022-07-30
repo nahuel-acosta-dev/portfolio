@@ -1,6 +1,6 @@
 import React from 'react';
 
-const TitleSecundary = ({children}) =>{
+const TitlePrimary = ({children}) =>{
     return(
         <h1 className="title">
             {children}
@@ -8,4 +8,4 @@ const TitleSecundary = ({children}) =>{
     )
 }
 
-export default TitleSecundary;
+export default TitlePrimary;

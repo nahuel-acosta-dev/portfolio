@@ -1,7 +1,7 @@
 import React from "react";
 import Header from '../components/header/Header';
 import Home from '../components/section/Home';
-import TitleSecundary from '../components/title/TitleSecundary';
+import TitlePrimary from '../components/title/TitlePrimary';
 
 const Portfolio = () => {
 
@@ -11,11 +11,11 @@ const Portfolio = () => {
 
       <main>
             <Home>
-                <TitleSecundary>
+                <TitlePrimary>
                     Freelance front-end 
                     developer with a passion 
                     for design and JavaScript
-                </TitleSecundary>
+                </TitlePrimary>
             </Home>
             <section className="contact">
 
