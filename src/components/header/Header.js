@@ -10,7 +10,7 @@ const Header = () => {
 
     return(
         <header className="header">
-        <Navbar variant="white" className="header__navbar" expand="lg">
+        <Navbar variant="dark" className="header__navbar" expand="lg">
           <Container>
               <Navbar.Brand href="#home"> 
               <img
