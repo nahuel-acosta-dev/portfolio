@@ -25,34 +25,43 @@ const Home = ({children}) =>{
                                 used to demonstrate the visual form of a document or a 
                                 typeface without relying on meaningful content.
                             </div>
-                            <Row className="home__icons">
+                            <Row className="home__contacts">
                                 <Col>
+                                <a href="https://github.com/nahuel43038" target="_blank" rel="noreferrer">
                                     <img 
                                         src={Github}
                                         width="50px"
                                         alt="git hub"
                                     />
+                                </a>
                                 </Col>
                                 <Col>
+                                <a href="mailto:brianacostanahuel2000@gmail.com">
                                     <img 
                                         src={Mail}
                                         width="50px"
                                         alt="mail"
                                         />
+                                </a>
                                 </Col>
                                 <Col>
+                                <a href="https://www.linkedin.com/in/nahuel-acosta-2b5423188"
+                                target="_blank" rel="noreferrer">
                                     <img 
                                         src={Linkedin}
                                         width="50px"
                                         alt="linkedin"
                                     />
+                                </a>
                                 </Col>
                                 <Col>
+                                <a href="tel:+541164729851">
                                     <img 
                                         src={Phone}
                                         width="50px"
                                         alt="phone"
                                     />
+                                </a>
                                 </Col>
                             </Row>
                         </Col>

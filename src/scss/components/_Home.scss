@@ -1,6 +1,8 @@
 .home{
-    height: 120vh;
-    background-color: red;
+    min-height: 120vh;
+    background-color: transparent;
+    color: white;
+    padding-bottom: 20px;;
     .home__texts{
         padding-top: 30%;
         .home__text{
@@ -8,7 +10,14 @@
         }
     }
     .home__image{
-        background-color: black;
+        background-image: url('../../image/man.jpg');
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center center;
         border-radius: 0 0px 0px 12.5em;
+        height: 110vh;
+    }
+    .home__contacts{
+        margin-top: 10%;
     }
 }

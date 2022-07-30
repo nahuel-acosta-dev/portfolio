@@ -1,7 +1,8 @@
 @import '~bootstrap/scss/bootstrap.scss';
+@import url('https://fonts.googleapis.com/css2?family=Courgette&family=Nunito+Sans:wght@300&display=swap');
 //config
-@import './scss/config/Basic';
 @import './scss/config/Variables';
+@import './scss/config/Basic';
 @import './scss/config/Responsive';
 //components
 @import './scss/components/Header';
