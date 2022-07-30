@@ -1,6 +1,7 @@
 import React from "react";
 import Header from '../components/header/Header';
 import Home from '../components/section/Home';
+import TitleSecundary from '../components/title/TitleSecundary';
 
 const Portfolio = () => {
 
@@ -9,7 +10,13 @@ const Portfolio = () => {
       <Header/>
 
       <main>
-            <Home/>
+            <Home>
+                <TitleSecundary>
+                    Freelance front-end 
+                    developer with a passion 
+                    for design and JavaScript
+                </TitleSecundary>
+            </Home>
             <section className="contact">
 
             </section>          

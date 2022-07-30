@@ -1,6 +1,12 @@
 .home{
     height: 120vh;
     background-color: red;
+    .home__texts{
+        padding-top: 30%;
+        .home__text{
+            font-size: 1.5em;
+        }
+    }
     .home__image{
         background-color: black;
         border-radius: 0 0px 0px 12.5em;
