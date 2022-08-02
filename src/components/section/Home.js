@@ -12,7 +12,7 @@ const Home = ({children}) =>{
     return(
         <section className="home">
             <Row className="height_maximum">
-                <Col md={7}>
+                <Col xs={{ order: 'last' }} md={{span:7, order: 'first'}}>
                     <Row>
                         <Col md={2}></Col>
                         <Col className="home__texts">
@@ -68,7 +68,7 @@ const Home = ({children}) =>{
                         <Col md={1}></Col>
                     </Row>
                 </Col>
-                <Col md={5} className="height_maximum">
+                <Col xs={{ order: 'first' }} md={{span:5, order: 'last'}} className="height_maximum">
                     <div className="home__image height_maximum">
                     </div>
                 </Col>
