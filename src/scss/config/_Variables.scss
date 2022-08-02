@@ -2,7 +2,7 @@
 //1- Patron de Colores
 ////////////////////////////////
 $white-shadow: #a9a3a3;
-
+$blue-transparent: rgba(1,4,21,.4);
 ////////////////////////////////
 //2- Modificando Variables Bootstrap
 ////////////////////////////////
@@ -17,3 +17,8 @@ $regular: 'Nunito Sans', sans-serif;
 ////////////////////////////////
 //3- mixins generals
 ////////////////////////////////
+@mixin background-cover-center{
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+}

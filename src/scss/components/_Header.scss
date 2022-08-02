@@ -1,9 +1,25 @@
 .header{
     .header__navbar{
         background-color: transparent;
+    .header__avatar{
+        width: 30px;
+        height: 30px;
+        border-radius: 30px;
+        background-image: url('../../image/avatar.jpg');
+        @include background-cover-center;
+        padding-top: 23px;
+        padding-right: 4px;
+        .header__status{
+            width: 5px;
+            height: 5px;
+            border-radius: 5px;
+            background-color: #0fc60f;
+            float: right;
+        }
     }
     .header__navbar--links{
         border-radius: 30px;
+        background-color: $blue-transparent;
         &:hover{
             box-shadow: 0 0 20px $white-shadow;
         }
@@ -14,5 +30,20 @@
                     text-shadow: 0 0 30px $white-shadow, 0 0 30px $white-shadow, 0 0 30px $white-shadow;
                 }
             }
+    }
+}
+}
+
+
+////////////////////////////////
+//Resonsive
+////////////////////////////////
+@mixin header-responsive-md{
+    .header{
+        .header__navbar--links{
+            &:hover{
+                box-shadow: none!important;
+            }
+        }
     }
 }

@@ -10,10 +10,8 @@
         }
     }
     .home__image{
-        background-image: url('../../image/man.jpg');
-        background-repeat: no-repeat;
-        background-size: cover;
-        background-position: center center;
+        background-image: url('../../image/boy.jpg');
+        @include background-cover-center;
         border-radius: 0 0px 0px 12.5em;
         height: 110vh;
     }

@@ -3,7 +3,6 @@
 //config
 @import './scss/config/Variables';
 @import './scss/config/Basic';
-@import './scss/config/Responsive';
 //components
 @import './scss/components/Header';
 @import './scss/components/Home';
@@ -15,4 +14,7 @@
     height: 90vh;
     background-color:green;
 }
+
+//config
+@import './scss/config/Responsive';
 

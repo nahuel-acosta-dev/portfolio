@@ -1,0 +1,28 @@
+$lg: 992px;
+$md: 767px;
+$sm: 576px;
+
+@media all and (max-width: 992px){
+}
+
+@media all and (min-width:$md ) and (max-width: $lg){
+    
+}
+
+@media all and (max-width: $md){
+    @include header-responsive-md;
+}
+
+@media all and (min-width:$sm ) and (max-width: $md){
+}
+
+@media all and (max-width: $sm){
+////////////////////////////////
+//1- Components
+////////////////////////////////
+
+ ////////////////////////////////
+//2- Pages
+////////////////////////////////
+
+}
