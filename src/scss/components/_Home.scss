@@ -10,12 +10,27 @@
         }
     }
     .home__image{
-        background-image: url('../../image/boy.jpg');
+        background-image: url('../../image/man.jpg');
         @include background-cover-center;
         border-radius: 0 0px 0px 12.5em;
         height: 110vh;
     }
     .home__contacts{
         margin-top: 10%;
+    }
+}
+
+////////////////////////////////
+//Resonsive
+////////////////////////////////
+
+@mixin home-responsive-sm{
+    .home{
+        .home__image{
+            height: 40vh!important;
+        }
+        .home__texts{
+            padding-top: 10%;
+        }
     }
 }

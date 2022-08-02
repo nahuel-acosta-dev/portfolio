@@ -14,13 +14,14 @@ $sm: 576px;
 }
 
 @media all and (min-width:$sm ) and (max-width: $md){
+    
 }
 
 @media all and (max-width: $sm){
 ////////////////////////////////
 //1- Components
 ////////////////////////////////
-
+@include home-responsive-sm;
  ////////////////////////////////
 //2- Pages
 ////////////////////////////////
