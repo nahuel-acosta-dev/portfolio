@@ -11,6 +11,7 @@ const Header = () => {
     return(
         <header className="header">
         <Navbar variant="dark" className="header__navbar" expand="md">
+          
           <Container>
               <Navbar.Brand href="#home"> 
                 <Row>

@@ -2,10 +2,10 @@
 import React from 'react';
 import Row from 'react-bootstrap/Row';
 import Col from 'react-bootstrap/Col';
-import Mail from '../../image/icons/mail.svg';
-import Phone from '../../image/icons/phone.svg';
-import Linkedin from '../../image/icons/linkedin.svg';
-import Github from '../../image/icons/github.svg';
+import Mail from '../../image/icons/gmail.svg';
+import Phone from '../../image/icons/whatsap_green.svg';
+import Linkedin from '../../image/icons/linkedin_blue.svg';
+import Github from '../../image/icons/github_blue.svg';
 
 const Home = ({children}) =>{
 
@@ -26,7 +26,7 @@ const Home = ({children}) =>{
                                 typeface without relying on meaningful content.
                             </div>
                             <Row className="home__contacts">
-                                <Col>
+                                <Col className="home__icon">
                                 <a href="https://github.com/nahuel43038" target="_blank" rel="noreferrer">
                                     <img 
                                         src={Github}
@@ -35,7 +35,7 @@ const Home = ({children}) =>{
                                     />
                                 </a>
                                 </Col>
-                                <Col>
+                                <Col className="home__icon">
                                 <a href="mailto:brianacostanahuel2000@gmail.com">
                                     <img 
                                         src={Mail}
@@ -44,7 +44,7 @@ const Home = ({children}) =>{
                                         />
                                 </a>
                                 </Col>
-                                <Col>
+                                <Col className="home__icon">
                                 <a href="https://www.linkedin.com/in/nahuel-acosta-2b5423188"
                                 target="_blank" rel="noreferrer">
                                     <img 
@@ -54,7 +54,7 @@ const Home = ({children}) =>{
                                     />
                                 </a>
                                 </Col>
-                                <Col>
+                                <Col className="home__icon">
                                 <a href="tel:+541164729851">
                                     <img 
                                         src={Phone}
@@ -69,8 +69,7 @@ const Home = ({children}) =>{
                     </Row>
                 </Col>
                 <Col xs={{span: 6,offset:6 , order: 'first' }} sm={{span:5,offset:0, order: 'last'}} className="height_maximum">
-                    <div className="height_maximum home__image">
-                    </div>
+                    <div className="height_maximum home__image"></div>
                 </Col>
             </Row>
         </section>

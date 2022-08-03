@@ -17,6 +17,28 @@
     }
     .home__contacts{
         margin-top: 10%;
+        .home__icon{
+            &:hover{
+                animation:vibrate .5s infinite;
+                transition: all .4s;
+                transition-property: all;
+                transition-duration: 0.4s;
+                transition-timing-function: ease;
+                transition-delay: 0s;
+            }
+        }
+    }
+}
+
+////////////////////////////////
+//keyframes
+////////////////////////////////
+@keyframes vibrate{
+    0%{transform:rotate(8deg) scale(1.04)
+    }
+    50%{transform:rotate(-8deg) scale(1.04)
+    }
+    100%{transform:rotate(8deg) scale(1.04)
     }
 }
 

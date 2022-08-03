@@ -25,6 +25,7 @@
     .header__navbar--links{
         border-radius: 30px;
         background-color: $blue-transparent;
+        backdrop-filter: blur(8px);
         &:hover{
             box-shadow: 0 0 20px $white-shadow;
         }
