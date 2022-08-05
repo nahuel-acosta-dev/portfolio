@@ -14,16 +14,23 @@ const Skills = ({children}) =>{
 
     return(
         <section className="skills">
-            <Row>
-                <div className="home__title">
-                    {children}
-                </div>
-                <div className="home__text">
-                    In publishing and graphic design, 
-                    Lorem ipsum is a placeholder text commonly 
-                    used to demonstrate the visual form of a document or a 
-                    typeface without relying on meaningful content.
-                </div>
+            <Row className="height_maximum skills__cont">
+                <Row className="height_maximum">
+                    <Col md={1}></Col>
+                    <Col className="skills__texts text-center">
+                        <div className="skills__title">
+                            {children}
+                        </div>
+                        <div className="skills__text">
+                            In publishing and graphic design, 
+                            Lorem ipsum is a placeholder text commonly 
+                            used to demonstrate the visual form of a document or a 
+                            typeface without relying on meaningful content.
+                        </div>
+                    </Col>
+                    <Col></Col>
+                </Row>
+                <Col md={1}></Col>
                 <Col>
                     <p>DESARROLLO FRONT-END</p>
                     <p>
@@ -34,18 +41,22 @@ const Skills = ({children}) =>{
                     </p>
                     <Row>
                         <Col>
-                            <img 
-                                src={iconHtml}
-                                width="50px"
-                                alt="icon Html"
-                            />
-                        </Col>
-                        <Col>
-                            <img 
-                                src={iconCss}
-                                width="50px"
-                                alt="icon Css"
-                            />
+                            <Row>
+                                <Col>
+                                    <img 
+                                        src={iconHtml}
+                                        width="50px"
+                                        alt="icon Html"
+                                    />
+                                </Col>
+                                <Col>
+                                    <img 
+                                        src={iconCss}
+                                        width="50px"
+                                        alt="icon Css"
+                                    />
+                                </Col>
+                            </Row>
                         </Col>
                         <Col>
                             <img 
@@ -55,19 +66,24 @@ const Skills = ({children}) =>{
                             />
                         </Col>
                         <Col>
-                            <img 
-                                src={iconBootstrap}
-                                width="50px"
-                                alt="icon Bootstrap"
-                            />
+                            <Row>
+                                <Col>
+                                    <img 
+                                        src={iconBootstrap}
+                                        width="50px"
+                                        alt="icon Bootstrap"
+                                    />
+                                </Col>
+                                <Col>
+                                <img 
+                                    src={iconReact}
+                                    width="50px"
+                                    alt="icon React"
+                                />
+                                </Col>
+                            </Row>
                         </Col>
-                        <Col>
-                        <img 
-                            src={iconReact}
-                            width="50px"
-                            alt="icon React"
-                        />
-                        </Col>
+                        <Col md={3}></Col>
                     </Row>
                 </Col>
                 <Col>
@@ -79,6 +95,7 @@ const Skills = ({children}) =>{
                     out something in Figma or Sketch myself.
                     </p>
                     <Row>
+                        <Col md={1}></Col>
                         <Col>
                         <img 
                                 src={iconPython}
@@ -100,8 +117,10 @@ const Skills = ({children}) =>{
                                 alt="icon Html"
                             />
                         </Col>
+                        <Col md={3}></Col>
                     </Row>
                 </Col>
+                <Col md={1}></Col>
             </Row>
         </section>
     )
