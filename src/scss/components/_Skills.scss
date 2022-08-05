@@ -8,3 +8,15 @@
         margin-bottom: 10%;
     }
 }
+
+////////////////////////////////
+//Resonsive
+////////////////////////////////
+/// 
+@mixin skills-responsive-sm{
+    .skills{
+        .skills__front{
+            margin-bottom:3em;
+        }
+    }
+}

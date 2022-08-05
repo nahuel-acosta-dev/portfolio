@@ -2,7 +2,7 @@ $lg: 992px;
 $md: 767px;
 $sm: 576px;
 
-@media all and (max-width: 992px){
+@media all and (max-width: $lg){
 }
 
 @media all and (min-width:$md ) and (max-width: $lg){
@@ -22,6 +22,7 @@ $sm: 576px;
 //1- Components
 ////////////////////////////////
 @include home-responsive-sm;
+@include skills-responsive-sm;
  ////////////////////////////////
 //2- Pages
 ////////////////////////////////
