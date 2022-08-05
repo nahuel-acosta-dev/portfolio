@@ -2,8 +2,7 @@ import React from "react";
 import Header from '../components/header/Header';
 import Home from '../components/section/Home';
 import Skills from '../components/section/Skills';
-import TitlePrimary from '../components/title/TitlePrimary';
-import TitleSecundary from '../components/title/TitleSecundary';
+import Curriculum from '../components/section/Curriculum';
 
 const Portfolio = () => {
 
@@ -13,19 +12,25 @@ const Portfolio = () => {
 
       <main>
             <Home>
-                <TitlePrimary>
+                <h1 className="title">
                     Freelance front-end 
                     developer with a passion 
                     for design and JavaScript
-                </TitlePrimary>
+                </h1>
             </Home>
             <Skills>
-                <TitleSecundary>
+                <h2 className="title">
                     12+ years online 
                     experience as a developer and 
                     designer
-                </TitleSecundary>
+                </h2>
             </Skills>          
+            <Curriculum>
+                <h3 className="title">
+                    I’ve worked on more than 150 websites 
+                    for great organizations
+                </h3>
+            </Curriculum>
       </main>
     </>
     )

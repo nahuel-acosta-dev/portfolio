@@ -16,15 +16,15 @@ const Home = ({children}) =>{
                     <Row>
                         <Col md={2}></Col>
                         <Col className="home__texts text-center">
-                            <div className="home__title">
-                                {children}
-                            </div>
-                            <div className="home__text">
-                                In publishing and graphic design, 
-                                Lorem ipsum is a placeholder text commonly 
-                                used to demonstrate the visual form of a document or a 
-                                typeface without relying on meaningful content.
-                            </div>
+                                <div className="home__title">
+                                    {children}
+                                </div>
+                                <div className="home__text">
+                                    In publishing and graphic design, 
+                                    Lorem ipsum is a placeholder text commonly 
+                                    used to demonstrate the visual form of a document or a 
+                                    typeface without relying on meaningful content.
+                                </div>
                             <Row className="home__contacts">
                                 <Col className="home__icon">
                                 <a href="https://github.com/nahuel43038" target="_blank" rel="noreferrer">
