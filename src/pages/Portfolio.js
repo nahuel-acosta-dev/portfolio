@@ -3,6 +3,7 @@ import Header from '../components/header/Header';
 import Home from '../components/section/Home';
 import Skills from '../components/section/Skills';
 import Curriculum from '../components/section/Curriculum';
+import Contact from '../components/section/Contact';
 
 const Portfolio = () => {
 
@@ -31,6 +32,9 @@ const Portfolio = () => {
                     for great organizations
                 </h3>
             </Curriculum>
+            <Contact>
+                
+            </Contact>
       </main>
     </>
     )
