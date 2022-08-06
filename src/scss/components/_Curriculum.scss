@@ -3,13 +3,26 @@
     padding-bottom: 6%;
     min-height: 120vh;
     background-color: rgb(147, 234, 239);
+
     .curriculum__text{
         margin-bottom: 20%;
+    }
+    .curriculum__accordion{
+        --bs-accordion-active-color: black;
+        background-color: transparent;
+        border: none;
+        button{
+            background-color: transparent;
+            border: none;
+            &:focus{
+                box-shadow: none;
+            }
+        }
     }
     .curriculum__imgs{
         height: 3.125em;
         padding-top: 12px;
-        width: 3em;
+        width: 3.12em;
     }
     .curriculum__imgs--sub{
         height: 1.25em;
@@ -17,5 +30,10 @@
     }
     .curriculum__sub{
         margin-bottom: 10px;
+    }
+
+    .curriculum__info{
+        background-color: transparent;
+        border: none
     }
 }
