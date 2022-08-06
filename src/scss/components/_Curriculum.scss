@@ -1,4 +1,21 @@
 .curriculum{
+    padding-top: 10%;
+    padding-bottom: 6%;
     min-height: 120vh;
     background-color: rgb(147, 234, 239);
+    .curriculum__text{
+        margin-bottom: 20%;
+    }
+    .curriculum__imgs{
+        height: 3.125em;
+        padding-top: 12px;
+        width: 3em;
+    }
+    .curriculum__imgs--sub{
+        height: 1.25em;
+        width: 2.5em;
+    }
+    .curriculum__sub{
+        margin-bottom: 10px;
+    }
 }

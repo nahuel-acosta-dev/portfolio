@@ -1,0 +1,66 @@
+[
+    {
+        "name": "UTN Diplomatura en Desarrollo Web Full-Stack",
+        "img": "utn",
+        "url": "http://",
+        "started": "2021",
+        "finished": "2022",
+        "description":"",
+        "subs": [
+            {
+                "name": "Programador Web",
+                "img": "utn",
+                "url": "http://",
+                "started": "2021",
+                "finished": "2021",
+                "description":"Lorem ipsum es el texto que se usa habitualmente en diseño gráfico en demostraciones de tipografías o de borradores de diseño para probar el diseño visual antes de insertar el texto final",
+                "subs": []
+            },
+            {
+                "name": "Programación web con PHP y MySQL",
+                "img": "utn",
+                "url": "http://",
+                "started": "2021",
+                "finished": "2022",
+                "description":"Lorem ipsum es el texto que se usa habitualmente en diseño gráfico en demostraciones de tipografías o de borradores de diseño para probar el diseño visual antes de insertar el texto final",
+                "subs": []
+            },
+            {
+                "name": "Programación web con PHP y MySQL Avanzado",
+                "img": "utn",
+                "url": "http://",
+                "started": "2022",
+                "finished": "2022",
+                "description":"Lorem ipsum es el texto que se usa habitualmente en diseño gráfico en demostraciones de tipografías o de borradores de diseño para probar el diseño visual antes de insertar el texto final",
+                "subs": []
+            }
+        ]
+    },
+    {
+        "name": "Cs50 Harvard University",
+        "img": "harvard",
+        "url": "http://",
+        "started": "2021",
+        "finished": "2022",
+        "description": "Lorem ipsum es el texto que se usa habitualmente en diseño gráfico en demostraciones de tipografías o de borradores de diseño para probar el diseño visual antes de insertar el texto final",
+        "subs": []
+    },
+    {
+        "name": "Codo a Codo",
+        "img": "codoacodo",
+        "url": "http://",
+        "started": "2022",
+        "finished": "Actualidad",
+        "description": "Lorem ipsum es el texto que se usa habitualmente en diseño gráfico en demostraciones de tipografías o de borradores de diseño para probar el diseño visual antes de insertar el texto final",
+        "subs": []
+    },
+    {
+        "name": "ONE Oracle Next Education",
+        "img": "one",
+        "url": "http://",
+        "started": "2022",
+        "finished": "Actualidad",
+        "description": "Lorem ipsum es el texto que se usa habitualmente en diseño gráfico en demostraciones de tipografías o de borradores de diseño para probar el diseño visual antes de insertar el texto final",
+        "subs": []
+    }
+]
