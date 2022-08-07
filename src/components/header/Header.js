@@ -5,24 +5,24 @@ import Nav from 'react-bootstrap/Nav';
 import Row from 'react-bootstrap/Row';
 import Col from 'react-bootstrap/Col';
 
+
 const Header = () => {
     const available = true;
 
     return(
         <header className="header">
         <Navbar variant="dark" className="header__navbar" expand="md">
-          
           <Container>
-              <Navbar.Brand href="#home"> 
+              <Navbar.Brand> 
                 <Row>
-                  <Col>
-                    <div className="header__avatar">
-                      {available &&
-                        <div className="header__status"></div>
-                      }
-                    </div>
+                    <Col>
+                      <div className="header__avatar">
+                        {available &&
+                          <div className="header__status"></div>
+                        }
+                      </div>
                   </Col>
-                  <Col>Nahuel Acosta</Col>
+                  <Col className="home__name">Nahuel Acosta</Col>
                 </Row>
               </Navbar.Brand>
               <Navbar.Toggle aria-controls="navbarScroll" />
