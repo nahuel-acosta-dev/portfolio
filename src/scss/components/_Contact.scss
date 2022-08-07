@@ -1,4 +1,33 @@
 .contact{
+    padding-top: 10%;
+    padding-bottom: 6%;
     min-height: 110vh;
     background-color: rgb(210, 192, 166);
+    .contact__title{
+        margin-bottom: 5%;
+    }
+    .contact__text{
+        margin-bottom: 5%;
+    }
+    .contact__card{
+        background-color: black;
+        height: 50vh;
+        padding-top: 10%;
+        border-radius: 10px;
+        .contact__cont--avatar{
+            height: 50%;
+            .contact__avatar{
+                background-image: url('../../image/avatar.jpg');
+                background-repeat: no-repeat;
+                background-position: center center;
+                background-size: cover;
+                border-radius: 50%;
+            }
+        }
+        .contact__link{
+            text-decoration: none;
+            color: white;
+        }
+
+    }
 }

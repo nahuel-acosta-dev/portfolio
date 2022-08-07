@@ -33,7 +33,10 @@ const Portfolio = () => {
                 </h3>
             </Curriculum>
             <Contact>
-                
+                <h4 className="title">
+                    I’ve worked on more than 150 websites 
+                    for great organizations
+                </h4>
             </Contact>
       </main>
     </>
