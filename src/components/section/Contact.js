@@ -24,7 +24,7 @@ const Contact = ({children}) =>{
                 <Col></Col>
             </Row>
             <Row>
-                <Col>
+                <Col xs={12} md>
                     <Row>
                         <Col xs={1}></Col>
                         <Col>
@@ -49,9 +49,9 @@ const Contact = ({children}) =>{
                         <Col xs={1}></Col>
                     </Row>
                 </Col>
-                <Col>
+                <Col xs={12} md>
                     <Row>
-                        <Col xs={4}></Col>
+                        <Col xs={2} sm={2} md={3} lg={4}></Col>
                         <Col>
                             <div className="contact__card">
                                 <Row className="contact__cont--avatar">
@@ -83,7 +83,7 @@ const Contact = ({children}) =>{
                             </div>
                             Copyright © 2022 Brian Nahuel Acosta All Rights Reserved.
                         </Col>
-                        <Col xs={3}></Col>
+                        <Col xs={2} sm={2} md={3}></Col>
                     </Row>
                 </Col>
             </Row>
