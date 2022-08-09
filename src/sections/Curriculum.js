@@ -4,7 +4,6 @@ import Col from 'react-bootstrap/Col';
 import Card from 'react-bootstrap/Card';
 import Accordion from 'react-bootstrap/Accordion';
 import Button from 'react-bootstrap/Button';
-import utn from '../image/certificates/utn.svg'
 import Certificates from '../utils/certificates';
 
 const Curriculum = ({children}) =>{
@@ -15,7 +14,6 @@ const Curriculum = ({children}) =>{
         {title: 'Otros', knowledge: "Webpack, Sass, Redux, Git, GitHub"}
     ];
 
-    console.log(utn)
     console.log(Certificates[0].img)
 
     return(
