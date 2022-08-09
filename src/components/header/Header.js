@@ -16,11 +16,26 @@ const Header = () => {
               <Navbar.Brand> 
                 <Row>
                     <Col>
-                      <div className="header__avatar">
+                    <div className="dropdown">
+                      <button className="btn btn-secondary 
+                      dropdown-toggle header__avatar" type="button" 
+                      id="dropdownMenuButton1" data-bs-toggle="dropdown" 
+                      aria-expanded="false">
                         {available &&
                           <div className="header__status"></div>
                         }
-                      </div>
+                      </button>
+
+                      <ul className="dropdown-menu dropdown-menu-dark">
+                        <li>
+                          <a className="dropdown-item" href="https://">
+                            <div className="header__status header__status--link"></div>{' '} Disponible
+                          </a>
+                        </li>
+                        <li><a className="dropdown-item" href="https://">Descargar Cv</a></li>
+                        <li><a className="dropdown-item" href="https://">Something else here</a></li>
+                      </ul>
+                    </div>
                   </Col>
                   <Col className="home__name">Nahuel Acosta</Col>
                 </Row>
@@ -33,9 +48,10 @@ const Header = () => {
                 <Col className="header__cont">
                     <Nav className="justify-content-center header__navbar--links">
                       <Nav.Link className="header__link" href="#home">Home</Nav.Link>
-                      <Nav.Link className="header__link" href="#features">Features</Nav.Link>
-                      <Nav.Link className="header__link" href="#pricing">Pricing</Nav.Link>
-                      <Nav.Link className="header__link" href="#pricing">Pricing</Nav.Link>
+                      <Nav.Link className="header__link" href="#skills">Skills</Nav.Link>
+                      <Nav.Link className="header__link" href="#projects">Projects</Nav.Link>
+                      <Nav.Link className="header__link" href="#curriculum">CV</Nav.Link>
+                      <Nav.Link className="header__link" href="#contact">Contact</Nav.Link>
                     </Nav>
                 </Col>
                 <Col md={3}></Col>

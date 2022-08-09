@@ -10,7 +10,7 @@ import Github from '../image/icons/github_blue.svg';
 const Home = ({children}) =>{
 
     return(
-        <section className="home">
+        <section className="home" id="home">
             <Row className="height_maximum">
                 <Col xs={{ order: 'last' }} sm={{span:7, order: 'first'}}>
                     <Row>

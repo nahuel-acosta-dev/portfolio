@@ -13,7 +13,7 @@ import iconMysql from '../image/icons/mysql.svg';
 const Skills = ({children}) =>{
 
     return(
-        <section className="skills">
+        <section className="skills" id="skills">
             <div>
                 <Row>
                     <Col xs={1}></Col>

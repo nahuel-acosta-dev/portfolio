@@ -7,7 +7,7 @@ const Projects = ({children}) =>{
     const description = ', 3D typography for any website and any font';
 
     return(
-        <section className="projects">
+        <section className="projects" id="projects">
             {children}
             <div className="projects__cont">
                 <Project direction='left' title={title} description={description} img={sixlives}/>

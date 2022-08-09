@@ -7,7 +7,7 @@ import Button from 'react-bootstrap/Button';
 const Contact = ({children}) =>{
 
     return(
-        <section className="contact">
+        <section className="contact" id="contact">
             <Row>
                 <Col xs={1}></Col>
                 <Col>

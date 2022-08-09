@@ -51,7 +51,7 @@ const Curriculum = ({children}) =>{
     }
 
     return(
-        <section className="curriculum">
+        <section className="curriculum" id="curriculum">
             <Row className="justify-content-md-center">
                 <Col xs={1}></Col>
                 <Col className="curriculum__texts text-center justify-content-center">
