@@ -26,7 +26,8 @@
     }
     .curriculum__imgs--sub{
         height: 1.25em;
-        width: 2.5em;
+        width: 2.8em;
+        margin-right: 20px;
     }
     .curriculum__sub{
         margin-bottom: 10px;
@@ -35,5 +36,12 @@
     .curriculum__info{
         background-color: transparent;
         border: none
+    }
+}
+
+@mixin curriculum-responsive-sm{
+    .curriculum__imgs--sub{
+        width: initial !important;;
+        
     }
 }

@@ -1,15 +1,28 @@
-[
+import UtnLogo from '../image/certificates/utn.svg';
+import CodoACodo from '../image/certificates/logocodoacodo.png';
+import Oracle from '../image/certificates/one.png';
+import Cs50 from '../image/certificates/harvard.svg';
+
+const certificates = [
     {
         "name": "UTN Diplomatura en Desarrollo Web Full-Stack",
-        "img": "utn",
+        "img": {
+            logo: UtnLogo,
+            alt: 'logo utn',
+            width: '20px'
+        },
         "url": "http://",
         "started": "2021",
         "finished": "2022",
         "description":"",
         "subs": [
             {
-                "name": "Programador Web",
-                "img": "utn",
+                "name": "Programador Web Inicial",
+                "img": {
+                    logo: UtnLogo,
+                    alt: 'logo utn',
+                    width: '20px'
+                },
                 "url": "http://",
                 "started": "2021",
                 "finished": "2021",
@@ -18,7 +31,11 @@
             },
             {
                 "name": "Programación web con PHP y MySQL",
-                "img": "utn",
+                "img": {
+                    logo: UtnLogo,
+                    alt: 'logo utn',
+                    width: '20px'
+                },
                 "url": "http://",
                 "started": "2021",
                 "finished": "2022",
@@ -27,7 +44,11 @@
             },
             {
                 "name": "Programación web con PHP y MySQL Avanzado",
-                "img": "utn",
+                "img": {
+                    logo: UtnLogo,
+                    alt: 'logo utn',
+                    width: '20px'
+                },
                 "url": "http://",
                 "started": "2022",
                 "finished": "2022",
@@ -38,7 +59,11 @@
     },
     {
         "name": "Cs50 Harvard University",
-        "img": "harvard",
+        "img": {
+            logo: Cs50,
+            alt: 'logo Cs50',
+            width: '20px'
+        },
         "url": "http://",
         "started": "2021",
         "finished": "2022",
@@ -47,7 +72,11 @@
     },
     {
         "name": "Codo a Codo",
-        "img": "codoacodo",
+        "img": {
+            logo: CodoACodo,
+            alt: 'logo Codo a Codo',
+            width: '20px'
+        },
         "url": "http://",
         "started": "2022",
         "finished": "Actualidad",
@@ -56,7 +85,11 @@
     },
     {
         "name": "ONE Oracle Next Education",
-        "img": "one",
+        "img": {
+            logo: Oracle,
+            alt: 'logo oracle',
+            width: '20px'
+        },
         "url": "http://",
         "started": "2022",
         "finished": "Actualidad",
@@ -64,3 +97,5 @@
         "subs": []
     }
 ]
+
+export default certificates;

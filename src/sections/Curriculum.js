@@ -1,54 +1,22 @@
-import React, {useEffect,useState} from 'react';
+import React from 'react';
 import Row from 'react-bootstrap/Row';
 import Col from 'react-bootstrap/Col';
 import Card from 'react-bootstrap/Card';
 import Accordion from 'react-bootstrap/Accordion';
-import One from '../image/certificates/one.png';
-import Harvard from '../image/certificates/harvard.svg';
-import Utn from '../image/certificates/utn.svg';
-import CodoACodo from '../image/certificates/logocodoacodo.png';
+import Button from 'react-bootstrap/Button';
+import utn from '../image/certificates/utn.svg'
+import Certificates from '../class/certificates';
 
 const Curriculum = ({children}) =>{
-    const [certificates, setCertificates] = useState();
     const information = [
-        {title: 'Certificates', knowledge: "Front-end developer"},
-        {title: 'Certificates', knowledge: "Front-end developer"},
-        {title: 'Certificates', knowledge: "Front-end developer"},
-        {title: 'Certificates', knowledge: "Front-end developer"},
-        {title: 'Certificates', knowledge: "Front-end developer"}
+        {title: 'Desarrollador', knowledge: "Full-Stack"},
+        {title: 'Lenguajes', knowledge: "HTML/CSS, JavaScript, Python"},
+        {title: 'Marcos', knowledge: "Bootstrap, React, Django"},
+        {title: 'Otros', knowledge: "Webpack, Sass, Redux, Git, GitHub"}
     ];
 
-    const getCertificates = async () => {
-        const response = await fetch("certificates.json")
-        let data = await response.json();
-
-         console.log(response);
-         console.log(data);
-         if (response.status === 200) {
-            return setCertificates(data);
-         }
-     }
- 
-     useEffect(() => {
-        getCertificates()
-    }, []);
-
-    const getImg = (img) => {
-        const result = (
-            img === 'utn' ?
-                Utn
-            :
-            img === 'one' ?
-                One
-            :
-            img === 'harvard' ?
-                Harvard
-            :
-                CodoACodo
-        )
-
-        return result;
-    }
+    console.log(utn)
+    console.log(Certificates[0].img)
 
     return(
         <section className="curriculum" id="curriculum">
@@ -70,16 +38,17 @@ const Curriculum = ({children}) =>{
             <Row>
                 <Col xs={1}></Col>
                 <Col xs={10} md={6}>
+
                     <Accordion className="curriculum__diplomature">
-                        {certificates &&
-                            certificates.map((certificate,i) => (
+                        {Certificates &&
+                            Certificates.map((certificate,i) => (
                             <Accordion.Item eventKey={i} key={i} className="curriculum__accordion">
                                 <Accordion.Header>
                                     <div className="curriculum__imgs">
                                         <img 
-                                            src={getImg(certificate.img)}
-                                            width="20px"
-                                            alt="icon Html"
+                                            src={certificate.img.logo}
+                                            width={certificate.img.width}
+                                            alt={certificate.img.alt}
                                         />
                                     </div>
                                     {certificate.name}
@@ -93,11 +62,11 @@ const Curriculum = ({children}) =>{
                                                 <Accordion className="curriculum__sub">
                                                 <Accordion.Item eventKey="0" className="curriculum__accordion">
                                                 <Accordion.Header>
-                                                    <div  className="curriculum__imgs--sub">
+                                                    <div className="curriculum__imgs--sub">
                                                         <img 
-                                                        src={getImg(certificate.img)}
-                                                        width="20px"
-                                                        alt="icon Html"
+                                                        src={certificate.img.logo}
+                                                        width={certificate.img.width}
+                                                        alt={certificate.img.alt}
                                                         /> {' '}
                                                     </div>
                                                     {sub.name} 
@@ -119,7 +88,9 @@ const Curriculum = ({children}) =>{
                             ))
                         }
                     </Accordion>
+
                 </Col>
+
                 <Col xs={10} md={4}>
                     <Row>
                     <Col xs={2}></Col>
@@ -138,13 +109,20 @@ const Curriculum = ({children}) =>{
                                     </Card.Text>
                                 </Card.Body>
                             </Card>
-
                         ))
                     }
                     </Col>
                     </Row>
                 </Col>
+
                 <Col xs={1}></Col>
+            </Row>
+            <Row>
+                <Col></Col>
+                <Col className="d-grid gap-2">
+                    <Button>Descargar CV</Button>
+                </Col>
+                <Col></Col>
             </Row>
         </section>
     )

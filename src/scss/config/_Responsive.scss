@@ -19,10 +19,11 @@ $sm: 576px;
 
 @media all and (max-width: $sm){
 ////////////////////////////////
-//1- Components
+//1- Section
 ////////////////////////////////
 @include home-responsive-sm;
 @include skills-responsive-sm;
+@include curriculum-responsive-sm;
  ////////////////////////////////
 //2- Pages
 ////////////////////////////////
