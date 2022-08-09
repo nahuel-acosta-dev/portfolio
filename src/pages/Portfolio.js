@@ -1,9 +1,10 @@
 import React from "react";
 import Header from '../components/header/Header';
-import Home from '../components/section/Home';
-import Skills from '../components/section/Skills';
-import Curriculum from '../components/section/Curriculum';
-import Contact from '../components/section/Contact';
+import Home from '../sections/Home';
+import Skills from '../sections/Skills';
+import Curriculum from '../sections/Curriculum';
+import Contact from '../sections/Contact';
+import Projects from '../sections/Projects';
 
 const Portfolio = () => {
 
@@ -25,18 +26,23 @@ const Portfolio = () => {
                     experience as a developer and 
                     designer
                 </h2>
-            </Skills>          
-            <Curriculum>
-                <h3 className="title">
-                    I’ve worked on more than 150 websites 
-                    for great organizations
+            </Skills>
+            <Projects>
+                <h3 className="title text-center">
+                    Projects
                 </h3>
-            </Curriculum>
-            <Contact>
+            </Projects>          
+            <Curriculum>
                 <h4 className="title">
                     I’ve worked on more than 150 websites 
                     for great organizations
                 </h4>
+            </Curriculum>
+            <Contact>
+                <h5 className="title">
+                    I’ve worked on more than 150 websites 
+                    for great organizations
+                </h5>
             </Contact>
       </main>
     </>

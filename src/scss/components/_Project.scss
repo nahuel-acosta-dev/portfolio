@@ -1,0 +1,23 @@
+.project{
+    margin-top: 5%;
+    .project__preview{
+        transform: rotate(5deg);
+        height: 6em;
+        margin-bottom: 2em;
+        padding: 0;
+        border: 2px solid black;
+        border-radius: 4px;
+        .project__stripe{
+            background-color: violet;
+        }
+        .project__img{
+            height: 100%;
+        }
+    }
+    .project__preview--right{
+        transform: rotate(-5deg);
+    }
+    .project__description{
+        padding-top: 6%;
+    }
+}

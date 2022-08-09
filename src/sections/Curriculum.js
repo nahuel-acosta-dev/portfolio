@@ -3,10 +3,10 @@ import Row from 'react-bootstrap/Row';
 import Col from 'react-bootstrap/Col';
 import Card from 'react-bootstrap/Card';
 import Accordion from 'react-bootstrap/Accordion';
-import One from '../../image/certificates/one.png';
-import Harvard from '../../image/certificates/harvard.svg';
-import Utn from '../../image/certificates/utn.svg';
-import CodoACodo from '../../image/certificates/logocodoacodo.png';
+import One from '../image/certificates/one.png';
+import Harvard from '../image/certificates/harvard.svg';
+import Utn from '../image/certificates/utn.svg';
+import CodoACodo from '../image/certificates/logocodoacodo.png';
 
 const Curriculum = ({children}) =>{
     const [certificates, setCertificates] = useState();

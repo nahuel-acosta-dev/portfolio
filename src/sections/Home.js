@@ -2,10 +2,10 @@
 import React from 'react';
 import Row from 'react-bootstrap/Row';
 import Col from 'react-bootstrap/Col';
-import Mail from '../../image/icons/gmail.svg';
-import Phone from '../../image/icons/whatsap_green.svg';
-import Linkedin from '../../image/icons/linkedin_blue.svg';
-import Github from '../../image/icons/github_blue.svg';
+import Mail from '../image/icons/gmail.svg';
+import Phone from '../image/icons/whatsap_green.svg';
+import Linkedin from '../image/icons/linkedin_blue.svg';
+import Github from '../image/icons/github_blue.svg';
 
 const Home = ({children}) =>{
 

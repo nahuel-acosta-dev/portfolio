@@ -1,14 +1,14 @@
 import React from 'react';
 import Row from 'react-bootstrap/Row';
 import Col from 'react-bootstrap/Col';
-import iconHtml from '../../image/icons/html.svg';
-import iconCss from '../../image/icons/css.svg';
-import iconJavascript from '../../image/icons/javascript.svg';
-import iconBootstrap from '../../image/icons/bootstrap.svg';
-import iconReact from '../../image/icons/react.svg';
-import iconPython from '../../image/icons/python.svg';
-import iconDjango from '../../image/icons/django.svg';
-import iconMysql from '../../image/icons/mysql.svg';
+import iconHtml from '../image/icons/html.svg';
+import iconCss from '../image/icons/css.svg';
+import iconJavascript from '../image/icons/javascript.svg';
+import iconBootstrap from '../image/icons/bootstrap.svg';
+import iconReact from '../image/icons/react.svg';
+import iconPython from '../image/icons/python.svg';
+import iconDjango from '../image/icons/django.svg';
+import iconMysql from '../image/icons/mysql.svg';
 
 const Skills = ({children}) =>{
 

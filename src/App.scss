@@ -5,11 +5,15 @@
 @import './scss/config/Basic';
 //components
 @import './scss/components/Header';
-@import './scss/components/Home';
-@import './scss/components/Skills';
-@import './scss/components/Curriculum';
-@import './scss/components/Contact';
 @import './scss/components/Title';
+@import './scss/components/Project';
+//sections
+@import './scss/sections/Home';
+@import './scss/sections/Skills';
+@import './scss/sections/Projects';
+@import './scss/sections/Curriculum';
+@import './scss/sections/Contact';
+
 //Page
 @import './scss/pages/Portfolio';
 
