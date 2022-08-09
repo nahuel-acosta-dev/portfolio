@@ -5,7 +5,7 @@ import Card from 'react-bootstrap/Card';
 import Accordion from 'react-bootstrap/Accordion';
 import Button from 'react-bootstrap/Button';
 import utn from '../image/certificates/utn.svg'
-import Certificates from '../class/certificates';
+import Certificates from '../utils/certificates';
 
 const Curriculum = ({children}) =>{
     const information = [
