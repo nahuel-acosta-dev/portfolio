@@ -2,7 +2,7 @@ import React from 'react';
 
 const SideBar = () => {
     return(
-        <header className="sidebar">
+        <section className="sidebar">
             <ul className="sidebar__social">
                 <li>
                     <a className={`bi bi-house-door sidebar__enytpo entypo-house`} 
@@ -38,7 +38,7 @@ const SideBar = () => {
                     </a>
                 </li>
             </ul>
-        </header>
+        </section>
     )
 }
 

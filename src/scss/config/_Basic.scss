@@ -4,8 +4,18 @@ html{
 }
     
 body{
-    background-color: black;
+    background-color: $blue;
+    background-image: url('../../image/min-star.jpg');
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-attachment: fixed;
+    background-size:cover;
     font-family: $regular;
+}
+
+main{
+    backdrop-filter: blur(20px);
+    background-color: rgba(10, 23, 171, 0.2);
 }
 
 .height_maximum{

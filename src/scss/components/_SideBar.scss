@@ -10,6 +10,7 @@
 }
   
 .sidebar__social {
+    z-index: 100;
     left: 0;
     position: fixed;
     top: 30%;
@@ -28,12 +29,12 @@
             .active{
                 color: red!important;
                 .sidebar__name{
-                    color: white;
+                    color:$white;
                 }
             }
             .sidebar__enytpo{
-                background: black;
-                color: #fff;
+                background: $black;
+                color: $white;
                 text-decoration: none;
                 display: block;
                 height: 50px;
@@ -50,7 +51,7 @@
                     }
                 }
                 .sidebar__name{
-                    font: 12px;
+                    font: 12px $regular;
                     text-transform: uppercase;
                     border-radius: 3px;
                     line-height: 24px;
