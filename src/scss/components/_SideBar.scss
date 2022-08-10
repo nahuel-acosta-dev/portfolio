@@ -1,0 +1,83 @@
+[class^="entypo-"]:before {
+    font-family: 'entypo', sans-serif;
+   }
+
+   #social-sidebar {
+    left: 0;
+    position: fixed;
+    top: 30%;
+   }
+   #social-sidebar li:first-child a { border-top-right-radius: 5px; }
+   #social-sidebar li:last-child a { border-bottom-right-radius: 5px; }
+    
+   #social-sidebar a {
+    background: violet;
+    color: #fff;
+       text-decoration: none;
+    display: block;
+    height: 50px;
+    width: 50px;  
+    font-size: 24px;
+    line-height: 50px;
+    position: relative;
+    text-align: center;
+       cursor: pointer;
+   }
+   #social-sidebar a:hover span {
+    left: 120%;
+    opacity: 1;
+   }
+   #social-sidebar a span {
+    font: 12px "Open Sans", sans-serif;
+    text-transform: uppercase;
+    border-radius: 3px;
+    line-height: 24px;
+    left: -100%;
+    margin-top: -16px;
+    opacity: 0;
+    padding: 4px 8px;
+    position: absolute;
+    transition: opacity .3s, left .4s;
+    top: 50%;
+    z-index: -1;
+   }
+    
+   #social-sidebar a span:before {
+    content: "";
+    display: block;
+    height: 8px;
+     width: 8px;
+    left: -4px;
+    margin-top: -4px;
+    position: absolute;
+    top: 50%;
+    transform: rotate(45deg);
+   }
+    
+   #social-sidebar a[class*="twitter"]:hover,
+   #social-sidebar a[class*="twitter"] span,
+   #social-sidebar a[class*="twitter"] span:before {background: #00aced;}
+    
+   #social-sidebar a[class*="facebook"]:hover,
+   #social-sidebar a[class*="facebook"] span,
+   #social-sidebar a[class*="facebook"] span:before {background: #3B5998;}
+    
+   #social-sidebar a[class*="gplus"]:hover,
+   #social-sidebar a[class*="gplus"] span,
+   #social-sidebar a[class*="gplus"] span:before {background: #E34429;}
+    
+   #social-sidebar a[class*="dribbble"]:hover,
+   #social-sidebar a[class*="dribbble"] span,
+   #social-sidebar a[class*="dribbble"] span:before {background: #ea4c89;}
+    
+   #social-sidebar a[class*="dropbox"]:hover,
+   #social-sidebar a[class*="dropbox"] span,
+   #social-sidebar a[class*="dropbox"] span:before {background: #8DC5F2;}
+    
+   #social-sidebar a[class*="github"]:hover,
+   #social-sidebar a[class*="github"] span,
+   #social-sidebar a[class*="github"] span:before {background: #9C7A5B;}
+    
+   #social-sidebar a[class*="evernote"]:hover,
+   #social-sidebar a[class*="evernote"] span,
+   #social-sidebar a[class*="evernote"] span:before {background: #6BB130;}
