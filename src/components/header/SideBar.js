@@ -1,31 +1,41 @@
 import React from 'react';
 
 const SideBar = () => {
-    
-    
     return(
-        <header>
-            <ul id="social-sidebar">
+        <header className="sidebar">
+            <ul className="sidebar__social">
                 <li>
-                    <a className="entypo-twitter" href="https://"><span>Tweeter</span></a>
+                    <a className={`bi bi-house-door sidebar__enytpo entypo-house`} 
+                    href="#home"
+                    >
+                        <span className="sidebar__name">Inicio</span>
+                    </a>
                 </li>
                 <li>
-                    <a className="entypo-facebook" href="https://"><span>Facebook</span></a>
+                    <a className={`bi bi-person sidebar__enytpo entypo-person`}
+                    href="#skills">
+                        <span className="sidebar__name">Habilidades</span>
+                    </a>
                 </li>
                 <li>
-                    <a className="entypo-gplus" href="https://"><span>Google+</span></a>
+                    <a className="bi bi-brush sidebar__enytpo entypo-gplus" href="#projects">
+                        <span className="sidebar__name">Proyectos</span>
+                    </a>
                 </li>
                 <li>
-                    <a className="entypo-dribbble" href="https://"><span>Dribbble</span></a>
+                    <a className="bi bi-clipboard2 sidebar__enytpo entypo-dribbble" href="#curriculum">
+                        <span className="sidebar__name">CV</span>
+                    </a>
                 </li>
                 <li>
-                    <a className="entypo-dropbox" href="https://"><span>Dropbox</span></a>
+                    <a className="bi bi-chat sidebar__enytpo entypo-dropbox" href="#contact">
+                        <span className="sidebar__name">Contáctame</span>
+                    </a>
                 </li>
                 <li>
-                    <a className="entypo-github" href="https://"><span>Github</span></a>
-                </li>
-                <li>
-                    <a className="entypo-evernote" href="https://"><span>Evernote</span></a>
+                    <a className="bi bi-box-arrow-in-down sidebar__enytpo entypo-evernote" href="https://">
+                        <span className="sidebar__name">Descargar CV</span>
+                    </a>
                 </li>
             </ul>
         </header>

@@ -1,5 +1,4 @@
 import React from "react";
-import Header from '../components/header/Header';
 import SideBar from '../components/header/SideBar';
 import Home from '../sections/Home';
 import Skills from '../sections/Skills';
