@@ -2,6 +2,7 @@ import React from 'react';
 import ReactDOM from 'react-dom/client';
 import App from './App';
 import 'bootstrap/dist/js/bootstrap.bundle.min';
+import 'aos/dist/aos.css';
 import './App.scss';
 import './index.css';
 import reportWebVitals from './reportWebVitals';

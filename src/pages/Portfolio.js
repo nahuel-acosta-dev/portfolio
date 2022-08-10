@@ -8,13 +8,15 @@ import Projects from '../sections/Projects';
 
 const Portfolio = () => {
 
+    
+
     return(
     <>
       <Header/>
 
       <main>
             <Home>
-                <h1 className="title">
+                <h1 className="title" data-aos="fade-up">
                     Freelance front-end 
                     developer with a passion 
                     for design and JavaScript
