@@ -6,10 +6,8 @@ html{
 body{
     background-color: $blue;
     background-image: url('../../image/min-star.jpg');
-    background-repeat: no-repeat;
-    background-position: center center;
+    @include background-cover-center;
     background-attachment: fixed;
-    background-size:cover;
     font-family: $regular;
 }
 

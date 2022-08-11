@@ -12,19 +12,18 @@ const Home = ({children}) =>{
     return(
         <section className="home" id="home">
             <Row className="height_maximum">
-                <Col xs={{ order: 'last' }} sm={{span:7, order: 'first'}}>
+                <Col>
                     <Row>
-                        <Col md={2}></Col>
-                        <Col className="home__texts text-center">
-                                <div className="home__title">
-                                    {children}
+                        <Col xs={4}></Col>
+                        <Col className="home__card text-center">
+                                <div className="home__circle d-flex justify-content-center align-items-center">
+                                    <div className="home__perfil"></div>
                                 </div>
-                                <div className="home__text">
+                                <h1 className="home__text">
                                     In publishing and graphic design, 
                                     Lorem ipsum is a placeholder text commonly 
-                                    used to demonstrate the visual form of a document or a 
-                                    typeface without relying on meaningful content.
-                                </div>
+                                    used to demonstrate the visual.
+                                </h1>
                             <Row className="home__contacts">
                                 <Col className="home__icon">
                                 <a href="https://github.com/nahuel43038" target="_blank" rel="noreferrer">
@@ -65,11 +64,8 @@ const Home = ({children}) =>{
                                 </Col>
                             </Row>
                         </Col>
-                        <Col md={1}></Col>
+                        <Col xs={4}></Col>
                     </Row>
-                </Col>
-                <Col xs={{span: 6,offset:6 , order: 'first' }} sm={{span:5,offset:0, order: 'last'}} className="height_maximum">
-                    <div className="height_maximum home__image"></div>
                 </Col>
             </Row>
         </section>
