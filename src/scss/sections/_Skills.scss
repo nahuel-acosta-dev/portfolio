@@ -1,21 +1,88 @@
+@mixin perspective{
+    border-radius: 20% auto;
+    padding: 15%;
+    cursor: pointer;
+    transform: rotateY(-30deg) rotateX(15deg);
+    border-radius: 10px;
+    position: absolute;
+    border-bottom: 4px solid rgba(0, 0, 0, .2);
+}
+@mixin card-design($color, $position, $z-index){
+    background: $color;
+    top: $position;
+    z-index: $z-index;
+
+}
+
 .skills{
-    padding-top: 10%;
-    padding-bottom: 6%;
-    min-height: 100vh;
-    color: $white;
-    .skills__texts{
-        margin-bottom: 10%;
+    min-height: 110vh;
+    .bg, .bg2{
+        width: 100%;
+        height: 100%;
+        position: absolute;
     }
+
+    .bg{
+        z-index: -1;
+        background-color: $blue;
+        clip-path: polygon(72% 74%, 100% 27%, 100% 100%, 5% 100%);
+    }
+    .bg2{
+        z-index: -2;
+        background-color: #2a5f98;
+        clip-path: polygon(63% 69%, 100% 9%, 100% 100%, 5% 100%);
+    }
+.skills__cont{
+    height: auto;
+    .skills__dev{
+        list-style-type: none;
+        perspective: 1000px;
+        li{
+            height: 10rem;
+            @include perspective;
+            mix-blend-mode: multiply;
+            &:hover{
+                transform: rotateY(-22deg) rotateX(7deg) scale(1.03);
+                transition: transform .4s ease-out;
+                z-index: 3;
+                mix-blend-mode: normal;
+             }
+            &:nth-child(1){
+                padding-top: 8%;
+                @include card-design(#bfe8fc, -105px, 2);
+                background: #bfe8fc;
+                top: -105px;
+                z-index: 2;
+            }
+            &:nth-child(2){
+                margin-top: 30px;
+                padding-top: 8%;
+                padding-bottom: 20%;
+                @include card-design(#faffc8, auto, 1);
+            }
+            &:nth-child(3){
+                margin-top: 85px;
+                padding-top: 8%;
+                padding-bottom: 20%;
+                @include card-design(rgb(242, 228, 255), 105px, auto);
+            }
+        }
+
+    }
+}
 }
 
 ////////////////////////////////
 //Resonsive
 ////////////////////////////////
 /// 
-@mixin skills-responsive-sm{
-    .skills{
-        .skills__front{
-            margin-bottom:3em;
+@mixin skills-responsive-xxl{
+        .skills__dev{
+            li{
+                &:nth-child(3){margin-top: 70px!important;}
+            }
         }
     }
+
+@mixin skills-responsive-sm{
 }
