@@ -1,8 +1,34 @@
-import React from 'react';
+import React, {useState, useEffect} from 'react';
+import Button from 'react-bootstrap/Button';
+import useScreenSize from '../../hooks/useScreenSize';
 
 const SideBar = () => {
+    const [collapse, setCollapse] = useState(true);
+    const [showButton, setShowButton] = useState(false)
+    const {width} = useScreenSize();
+
+    useEffect(() =>  {
+        if(width < 768) {
+            setCollapse(false);
+        }
+    }, [width])
+
     return(
-        <section className="sidebar">
+        <nav className="sidebar">
+        {!collapse ?
+            <div className="sidebar__collapse" 
+            onMouseEnter={() => setShowButton(true)}
+            onMouseLeave={() => setShowButton(false)}>
+                {showButton ?
+                <Button variant="danger" onClick={() => setCollapse(true)}>   
+                    <span className="bi bi-arrow-90deg-right"></span>   
+                </Button>
+                :
+                <Button variant="danger sidebar__button" onClick={() => setCollapse(true)}>      
+                </Button>
+                }
+            </div>
+            :
             <ul className="sidebar__social">
                 <li>
                     <a className={`bi bi-house-door sidebar__enytpo entypo-house`} 
@@ -37,8 +63,14 @@ const SideBar = () => {
                         <span className="sidebar__name">Descargar CV</span>
                     </a>
                 </li>
-            </ul>
-        </section>
+                <li>
+                    <a className="bi bi-arrow-90deg-left sidebar__enytpo 
+                        entypo-collapse btn btn-link" onClick={() => setCollapse(false)}>
+                        <span className="sidebar__name">Esconder</span>
+                    </a>
+                </li>
+            </ul>}
+        </nav>
     )
 }
 

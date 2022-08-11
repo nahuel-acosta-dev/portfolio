@@ -14,7 +14,7 @@ const Home = ({children}) =>{
             <Row className="height_maximum">
                 <Col>
                     <Row>
-                        <Col xs={4}></Col>
+                        <Col xs={1} sm={2} md={4}></Col>
                         <Col className="home__card text-center">
                                 <div className="home__circle d-flex justify-content-center align-items-center">
                                     <div className="home__perfil"></div>
@@ -64,7 +64,7 @@ const Home = ({children}) =>{
                                 </Col>
                             </Row>
                         </Col>
-                        <Col xs={4}></Col>
+                        <Col xs={1} sm={2} md={4}></Col>
                     </Row>
                 </Col>
             </Row>

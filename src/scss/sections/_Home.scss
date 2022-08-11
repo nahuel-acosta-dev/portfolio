@@ -27,11 +27,6 @@
             margin-top: 20px;
         }
     }
-    .home__image{
-        @include background-cover-center;
-        border-radius: 0 0px 0px 12.5em;
-        height: 110vh;
-    }
     .home__contacts{
         margin-top: 10%;
         .home__icon{
@@ -65,9 +60,6 @@
 
 @mixin home-responsive-sm{
     .home{
-        .home__image{
-            height: 40vh!important;
-        }
         .home__texts{
             padding-top: 10%;
         }
