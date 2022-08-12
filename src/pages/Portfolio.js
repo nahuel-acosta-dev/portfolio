@@ -22,18 +22,8 @@ const Portfolio = () => {
                     for design and JavaScript
                 </h1>
             </Home>
-            <Skills>
-                <h2 className="title">
-                    12+ years online 
-                    experience as a developer and 
-                    designer
-                </h2>
-            </Skills>
-            <Projects>
-                <h3 className="title text-center">
-                    Projects
-                </h3>
-            </Projects>          
+            <Skills></Skills>
+            <Projects></Projects>          
             <Curriculum>
                 <h4 className="title">
                     I’ve worked on more than 150 websites 

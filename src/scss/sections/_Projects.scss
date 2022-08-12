@@ -1,7 +1,9 @@
 .projects{
-    min-height: 100vh;
-    padding-top: 8%;
-    .projects__cont{
-        margin-bottom: 15%;
+    .projects__card{
+        border-radius: 50px;
+        background: rgba(82, 188, 250, 0.164);
+        padding: 20px;
+        margin-bottom: 40px;
     }
+    
 }
