@@ -1,14 +1,31 @@
+@mixin expanded {
+    background-color: rgba($red, 0.543);
+    height: 30rem;
+}
+
 .home{
+    padding-top: 1%;
     min-height: 120vh;
     background-color: transparent;
-    color: white;
+    color: $white;
     padding-bottom: 50px;
-    .home__card{
-        margin-top: 10%;
-        padding-top: 5%;
-        padding-bottom: 5%;
-        background-color: black;
-        border-radius: 10px;
+    background-image: url('../../image/galaxy.png');
+    @include background-cover-center;
+    z-index: 2;
+    .home__cont{
+        padding-top: 1%;
+        overflow: hidden;
+        position: absolute;
+        left: 20vw;
+        height: 15rem;
+        width: 14rem;
+        transition: all .4s ease-in-out;
+        border-radius: 5px;
+        animation: traslacion 10s;
+        animation-timing-function: linear;
+        animation-iteration-count:1;
+        background-color: transparent;
+        animation-direction: normal;
         .home__circle{
             border-radius: 50%;
             height: 12.5rem;
@@ -16,16 +33,19 @@
             margin-left: auto;
             margin-right: auto;
             background-color: $black;
-            background-image: url('../../image/man.svg');
+            background-image: url('../../image/planet.png');
             border: 5px solid black;
             @include background-cover-center;
             box-shadow: 0px 0px 20px black inset, 0px 0px 25px blue;
-            }
+            animation: girar 20s linear infinite;
+            animation-direction: alternate;
         }
-        .home__text{
-            font-size: 1.5em;
-            margin-top: 20px;
+        .home__contact{
+            margin-top: 20%;
         }
+    }
+    .home__expanded{
+        @include expanded
     }
     .home__contacts{
         margin-top: 10%;
@@ -40,11 +60,29 @@
             }
         }
     }
+    }
+    
 
 
 ////////////////////////////////
 //keyframes
 ////////////////////////////////
+/// 
+@keyframes traslacion{
+    0%{}
+    25%{}
+    50%{}
+    75%{left: 44vw;}
+    100%{}
+}
+@keyframes girar{
+    from{
+        transform: rotate(0deg)
+    }
+    to{
+        transform: rotate(360deg)
+    }
+}
 @keyframes vibrate{
     0%{transform:rotate(8deg) scale(1.04)
     }

@@ -4,10 +4,10 @@ html{
 }
     
 body{
-    background-color: $white;
+    background-color: $black!important;
+    color: $white;
     //min-height: 100vh;
     //background: rgb(2, 2, 26);
-    background-attachment: fixed;
     font-family: $regular;
     animation: move 1s linear infinite forwards;
 }

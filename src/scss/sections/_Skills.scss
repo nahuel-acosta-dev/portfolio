@@ -49,8 +49,7 @@
              }
             &:nth-child(1){
                 padding-top: 8%;
-                @include card-design(#bfe8fc, -105px, 2);
-                background: #bfe8fc;
+                @include card-design($red, -105px, 2);
                 top: -105px;
                 z-index: 2;
             }
@@ -58,13 +57,13 @@
                 margin-top: 30px;
                 padding-top: 8%;
                 padding-bottom: 20%;
-                @include card-design(#faffc8, auto, 1);
+                @include card-design($blue, auto, 1);
             }
             &:nth-child(3){
                 margin-top: 85px;
                 padding-top: 8%;
                 padding-bottom: 20%;
-                @include card-design(rgb(242, 228, 255), 105px, auto);
+                @include card-design(rgb(168, 101, 231), 105px, auto);
             }
         }
 

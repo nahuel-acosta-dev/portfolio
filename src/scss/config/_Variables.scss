@@ -5,19 +5,29 @@ $white-shadow: #a9a3a3;
 $blue-transparent: rgba(1,4,21,.4);
 $green: #0fc60f;
 $white: #f1efef;
-$black: #000000;
+
+//Mi paleta de colores
+$black: #1B1834;
 $blue: #9999ff;
-$violet: #d279a6;
-$orange: #FCA61F;
+$red: #BD1E6F;
+$purple:#5E2050;
+$edge: #801764;
+$warning: #FCA61F;
 ////////////////////////////////
 //2- Modificando Variables Bootstrap
 ////////////////////////////////
 $enable-shadows: true;
 $enable-gradients: true;
+///Button
+$btn-border-radius-sm: .6rem;
+$btn-border-radius-lg: 1rem;
+$btn-border-radius: 3rem;
+///Accordion
 $accordion-button-active-bg: none;
 $accordion-button-active-color: none;
 $accordion-button-active-color:  shade-color($black, 10%);
 $accordion-button-focus-box-shadow:  $black;
+
 .accordion-button{
     &:active{
         color: $blue!important;

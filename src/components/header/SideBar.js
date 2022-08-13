@@ -48,11 +48,11 @@ const SideBar = () => {
                         <span className="sidebar__name">Proyectos</span>
                     </a>
                 </li>
-                <li>
+                {/*<li>
                     <a className="bi bi-clipboard2 sidebar__enytpo entypo-dribbble" href="#curriculum">
                         <span className="sidebar__name">CV</span>
                     </a>
-                </li>
+                </li>*/}
                 <li>
                     <a className="bi bi-chat sidebar__enytpo entypo-dropbox" href="#contact">
                         <span className="sidebar__name">Contáctame</span>

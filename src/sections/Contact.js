@@ -2,54 +2,46 @@ import React from 'react';
 import Row from 'react-bootstrap/Row';
 import Col from 'react-bootstrap/Col';
 import Form from 'react-bootstrap/Form';
+import Container from 'react-bootstrap/Container';
 import Button from 'react-bootstrap/Button';
 
-const Contact = ({children}) =>{
+const Contact = () =>{
 
     return(
         <section className="contact" id="contact">
-            <Row>
-                <Col xs={1}></Col>
-                <Col>
-                    <div className="contact__title text-center">
-                        {children}
-                    </div>
-                    <div className="contact__text">
-                        In publishing and graphic design, 
-                        Lorem ipsum is a placeholder text commonly 
-                        used to demonstrate the visual form of a document or a 
-                        typeface without relying on meaningful content.
-                    </div>
-                </Col>
-                <Col></Col>
-            </Row>
-            <Row>
-                <Col xs={12} md>
-                    <Row>
-                        <Col xs={1}></Col>
-                        <Col>
-                            <Form>
-                                <Form.Group className="mb-3" controlId="exampleForm.ControlInput1">
-                                    <Form.Label>Name address</Form.Label>
-                                    <Form.Control type="text" placeholder="Enter name" />
-                                </Form.Group>
-                                <Form.Group className="mb-3" controlId="exampleForm.ControlInput1">
-                                    <Form.Label>Email address</Form.Label>
-                                    <Form.Control type="email" placeholder="name@example.com" />
-                                </Form.Group>
-                                <Form.Group className="mb-3" controlId="exampleForm.ControlTextarea1">
-                                    <Form.Label>Example textarea</Form.Label>
-                                    <Form.Control as="textarea" rows={3} />
-                                </Form.Group>
-                                <Button variant="primary" type="submit">
-                                    Submit
-                                </Button>
-                            </Form>
-                        </Col>
-                        <Col xs={1}></Col>
-                    </Row>
-                </Col>
-            </Row>
+            <Container>
+                <Row>
+                    <Col xs={1}/>
+                    <Col>
+                        <Row>
+                            <Col className="contact__text">
+                                <p>Get in Touch</p>
+                                <p>Contact me</p>
+                            </Col>
+                            <Col>
+                                <Form>
+                                    <Form.Group className="mb-3" controlId="exampleForm.ControlInput1">
+                                        <Form.Label>Nombre</Form.Label>
+                                        <Form.Control className="contact__input" type="email" placeholder="Nombre" />
+                                    </Form.Group>
+                                    <Form.Group className="mb-3" controlId="exampleForm.ControlInput2">
+                                        <Form.Label>Email</Form.Label>
+                                        <Form.Control className="contact__input" type="email" placeholder="email" />
+                                    </Form.Group>
+                                    <Form.Group className="mb-3" controlId="exampleForm.ControlTextarea1">
+                                        <Form.Label>Mensaje</Form.Label>
+                                        <Form.Control className="contact__input" as="textarea" rows={3} placeholder="Mensaje" />
+                                    </Form.Group>
+                                    <Button variant="warning" type="submit">
+                                        enviar
+                                    </Button>
+                                    </Form>
+                            </Col>
+                        </Row>
+                    </Col>
+                    <Col xs={2}/>
+                </Row>
+            </Container>
         </section>
     )
 

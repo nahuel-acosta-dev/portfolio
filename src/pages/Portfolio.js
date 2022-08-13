@@ -16,20 +16,11 @@ const Portfolio = () => {
 
       <main>
             <Home>
-                <h1 className="title" data-aos="fade-up">
-                    Freelance front-end 
-                    developer with a passion 
-                    for design and JavaScript
-                </h1>
             </Home>
             <Skills></Skills>
             <Projects></Projects>          
-            <Curriculum>
-                <h4 className="title">
-                    I’ve worked on more than 150 websites 
-                    for great organizations
-                </h4>
-            </Curriculum>
+            {/*<Curriculum>
+            </Curriculum>*/}
             <Contact>
                 <h5 className="title">
                     I’ve worked on more than 150 websites 
