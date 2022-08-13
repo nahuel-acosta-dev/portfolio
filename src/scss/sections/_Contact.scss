@@ -1,19 +1,109 @@
+$custom-transicion: 0.3s ease-in-out;
+@mixin custom-fonts($font, $weight, $color){
+    color: $color;
+    font-size: $font;
+    font-weight: $weight;
+}
+
 .contact{
-    padding-top: 10%;
+    padding-top: 5%;
+    padding-bottom: 5%;
     min-height: 100vh;
-    background: linear-gradient(90.21deg, $red -5.91%, $purple 111.58%);
-    .contact__input {
-        border: 2px solid $warning;
-    }
-    .contact__text{
-        font-size: 2.5rem;
-        font-weight: bold;
-        p{
-            &:nth-child(2){
-                color: orange;
-            }
+    background: linear-gradient(90.21deg, #AA367C -5.91%, #4A2FBD 111.58%);
+    .contact__form{
+        .contact__text{
+            @include custom-fonts(2.5rem, bold, #fff);
         }
     }
-
     
+    img{
+        animation: updown 3s linear infinite;
+    }
+
+    .contact__btn {
+        @include custom-fonts(18px, 700, #000);
+        background-color: $white;
+        padding: 14px 48px;
+        margin-top: 25px;
+        position: relative;
+        transition: $custom-transicion;
+        &:hover{
+            color: $white;
+        }
+        &::before{
+            content: "";
+            background: $black;
+            width: 0;
+            height: 100%;
+            position: absolute;
+            top: 0;
+            left: 0;
+            z-index: 0;
+            transition: $custom-transicion;
+            border-radius: .9rem;
+        }
+        &:hover::before{
+            width: 100%;
+        }
+        span{
+            z-index: 1;
+            position: relative;
+        }
+      }
+
+}
+
+.contact__form input, .contact__form textarea {
+    width: 100%;
+    background: rgba(255, 255, 255, 0.1);
+    border: 1px solid rgba(255, 255, 255, 0.5);
+    border-radius: 20px;
+    margin: 0 0 8px 0;
+    padding: 18px 26px;
+    @include custom-fonts(18px, 500, #fff);
+    letter-spacing: 0.8px;
+    transition: $custom-transicion;
+    &:focus{
+        background: $white;
+        color: $black;
+    }
+    &::placeholder{
+        @include custom-fonts(16px, 400, #fff);
+    }
+    &:focus::placeholder{
+        color: #121212;
+        opacity: 0.8;
+    }
+    &:focus::placeholder{
+        color: #121212;
+        opacity: 0.8;
+    }
+  }
+
+  ////////////////////////////////
+/// keyframes
+/// //////////////////////////////////
+/// 
+@keyframes updown {
+    0% {
+        transform: translateY(-20px);
+    }
+    50% {
+        transform: translateY(20px);
+    }
+    100% {
+        transform: translateY(-20px);
+    }
+  }
+
+
+////////////////////////////////
+/// Responsive
+/// //////////////////////////////////
+/// 
+@mixin contact-responsive-md{
+    .contact__cont{
+        display: flex;
+        justify-content: center;
+    }
 }

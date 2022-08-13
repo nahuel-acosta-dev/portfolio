@@ -17,6 +17,7 @@ $xxl: 1400px;
 
 @media all and (max-width: $md){
     @include header-responsive-md;
+    @include contact-responsive-md;
 }
 
 @media all and (min-width:$sm ) and (max-width: $md){
