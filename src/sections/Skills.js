@@ -19,7 +19,13 @@ const Skills = ({children}) =>{
             <div className="bg2"></div>
             <Container>
                 <Row className="skills__cont align-self-center align-justify-content-center">
-                        <Col sm={12} md></Col>
+                        <Col md={1}/>
+                        <Col sm={12} md>
+                            <p>Más de 12 años de experiencia en línea como desarrollador y diseñador</p>
+                            <p>Mi enfoque en estos días está en el desarrollo front-end, pero tengo 
+                                experiencia en diseño. Mi experiencia en 
+                                ambos campos conduce a mejores experiencias de usuario en menos tiempo.</p>
+                        </Col>
                         <Col sm={12} md>
                             <ul className="skills__dev">
                                 <li>

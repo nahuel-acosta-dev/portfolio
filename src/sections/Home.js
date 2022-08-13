@@ -78,6 +78,7 @@ const Home = () =>{
                                             </a>
                                     </Col>
                                         <p>Portafolio</p>
+                                        <p>Descargar CV</p>
                                     </Row>
                                 </div>
                         </Col>
