@@ -40,7 +40,7 @@ const SideBar = () => {
                 <li>
                     <a className={`bi bi-person sidebar__enytpo entypo-person`}
                     href="#skills">
-                        <span className="sidebar__name">Habilidades</span>
+                        <span className="sidebar__name">Sobre Mi</span>
                     </a>
                 </li>
                 <li>

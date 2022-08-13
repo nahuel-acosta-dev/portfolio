@@ -1,13 +1,14 @@
-@import '~bootstrap/scss/bootstrap.scss';
 @import url('https://fonts.googleapis.com/css2?family=Courgette&family=Nunito+Sans:wght@300&display=swap');
 //config
 @import './scss/config/Variables';
 @import './scss/config/Basic';
+@import '~bootstrap/scss/bootstrap.scss';
 //components
 @import './scss/components/Header';
 @import './scss/components/Title';
 @import './scss/components/Project';
 @import './scss/components/SideBar';
+@import './scss/components/CertificateCard';
 //sections
 @import './scss/sections/Home';
 @import './scss/sections/Skills';

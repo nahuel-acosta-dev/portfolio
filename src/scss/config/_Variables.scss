@@ -8,10 +8,22 @@ $white: #f1efef;
 $black: #000000;
 $blue: #9999ff;
 $violet: #d279a6;
+$orange: #FCA61F;
 ////////////////////////////////
 //2- Modificando Variables Bootstrap
 ////////////////////////////////
-$accordion-color:transparent;
+$enable-shadows: true;
+$enable-gradients: true;
+$accordion-button-active-bg: none;
+$accordion-button-active-color: none;
+$accordion-button-active-color:  shade-color($black, 10%);
+$accordion-button-focus-box-shadow:  $black;
+.accordion-button{
+    &:active{
+        color: $blue!important;
+    }
+}
+
 ////////////////////////////////
 //2- Fonts
 ////////////////////////////////

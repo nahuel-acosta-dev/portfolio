@@ -49,43 +49,6 @@ const Contact = ({children}) =>{
                         <Col xs={1}></Col>
                     </Row>
                 </Col>
-                <Col xs={12} md>
-                    <Row>
-                        <Col xs={2} sm={2} md={3} lg={4}></Col>
-                        <Col>
-                            <div className="contact__card">
-                                <Row className="contact__cont--avatar">
-                                    <Col xs={2}></Col>
-                                    <Col className="contact__avatar"></Col>
-                                    <Col xs={2}></Col>
-                                </Row>
-                                <Row className="contact__cardBody text-white text-center">
-                                    <Col xs={12}><strong>Nahuel Acosta</strong></Col>
-                                    <Col xs={12}><span>Desarrollador Full-Stack</span></Col>
-                                    <Col xs={12}>
-                                        <a  href="tel:+541164729851" className="contact__link">
-                                            +54 1164729851
-                                        </a>
-                                    </Col>
-                                    <Col xs={12}>
-                                        <a  href="mailto:brianacostanahuel2000@gmail.com"
-                                        className="contact__link">
-                                            Mail
-                                        </a>
-                                    </Col>
-                                    <Col xs={12}>
-                                    <a href="https://www.linkedin.com/in/nahuel-acosta-2b5423188"
-                                    target="_blank" rel="noreferrer" className="contact__link">
-                                        Linkedin
-                                    </a>
-                                </Col>
-                                </Row>
-                            </div>
-                            Copyright © 2022 Brian Nahuel Acosta All Rights Reserved.
-                        </Col>
-                        <Col xs={2} sm={2} md={3}></Col>
-                    </Row>
-                </Col>
             </Row>
         </section>
     )

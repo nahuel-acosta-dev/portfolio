@@ -1,127 +1,129 @@
-import React from 'react';
+import React, {useState} from 'react';
 import Row from 'react-bootstrap/Row';
 import Col from 'react-bootstrap/Col';
-import Card from 'react-bootstrap/Card';
+import Container from 'react-bootstrap/Container';
 import Accordion from 'react-bootstrap/Accordion';
-import Button from 'react-bootstrap/Button';
-import Certificates from '../utils/certificates';
 
-const Curriculum = ({children}) =>{
-    const information = [
-        {title: 'Desarrollador', knowledge: "Full-Stack"},
-        {title: 'Lenguajes', knowledge: "HTML/CSS, JavaScript, Python"},
-        {title: 'Marcos', knowledge: "Bootstrap, React, Django"},
-        {title: 'Otros', knowledge: "Webpack, Sass, Redux, Git, GitHub"}
-    ];
+import {certificates2021, certificates2022} from '../utils/certificates';
+import CertificateCard from '../components/cards/CertificateCard';
 
-    console.log(Certificates[0].img)
+
+const Curriculum = () =>{
+    const [showCourse, setShowCourse] = useState(false);
 
     return(
         <section className="curriculum" id="curriculum">
-            <Row className="justify-content-md-center">
-                <Col xs={1}></Col>
-                <Col className="curriculum__texts text-center justify-content-center">
-                    <div className="curriculum__title text-center">
-                        {children}
-                    </div>
-                    <div className="curriculum__text">
-                        In publishing and graphic design, 
-                        Lorem ipsum is a placeholder text commonly 
-                        used to demonstrate the visual form of a document or a 
-                        typeface without relying on meaningful content.
-                    </div>
-                </Col>
-                <Col xs={1} md></Col>
-            </Row>
-            <Row>
-                <Col xs={1}></Col>
-                <Col xs={10} md={6}>
-
-                    <Accordion className="curriculum__diplomature">
-                        {Certificates &&
-                            Certificates.map((certificate,i) => (
-                            <Accordion.Item eventKey={i} key={i} className="curriculum__accordion">
-                                <Accordion.Header>
-                                    <div className="curriculum__imgs">
-                                        <img 
-                                            src={certificate.img.logo}
-                                            width={certificate.img.width}
-                                            alt={certificate.img.alt}
+            <Container>
+                <Row>
+                    <Col xs sm={8} md={8} lg={5}>
+                        <Row>
+                            <Col>
+                                {
+                                    certificates2021.map((certificate, i) => (
+                                        <CertificateCard key={`cert-${i}`} 
+                                            institute={certificate.institute}
+                                            title={certificate.title}
+                                            started={certificate.started}
+                                            finished={certificate.finished}
+                                            tags={certificate.tags}
+                                            description={certificate.description}
                                         />
+                                    ))
+                                }
+                                <div className="accordion" id="accordionExample">
+                                    <div className="accordion-item curriculum__accordion">
+                                        <div id="collapseOne" className="accordion-collapse collapse" aria-labelledby="headingOne" data-bs-parent="#accordionExample">
+                                        <div>
+                                            {
+                                                certificates2022.map((certificate, i) => (
+                                                    <CertificateCard key={`cert-${i}`} 
+                                                        institute={certificate.institute}
+                                                        title={certificate.title}
+                                                        started={certificate.started}
+                                                        finished={certificate.finished}
+                                                        tags={certificate.tags}
+                                                        description={certificate.description}
+                                                    />
+                                                ))
+                                            }
+                                        </div>
+                                        </div>
+                                        <h2 className="accordion-header" id="headingOne">
+                                            <button onClick={
+                                                !showCourse ?
+                                                (() => setShowCourse(true))
+                                                :
+                                                (() => setShowCourse(false))
+                                            } className={`accordion-button curriculum__readmore
+                                            ${!showCourse && 'shadow'}
+                                            `} type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                                                <span>{
+                                                !showCourse ?
+                                                (<>Mostrar más</>)
+                                                :
+                                                (<>Mostrar menos</>)
+                                            }</span>
+                                            </button>
+                                        </h2>
                                     </div>
-                                    {certificate.name}
-                                </Accordion.Header>
+                                </div>
+                            </Col>
+                        </Row>
+                    </Col>
+                    <Col>
+                        <Accordion flush>
+                            <Accordion.Item eventKey="0">
+                                <Accordion.Header>Accordion Item #1</Accordion.Header>
                                 <Accordion.Body>
-                                    <Row>
-                                    {
-                                        certificate.subs.length > 0 ? (
-                                            certificate.subs.map((sub,i) => (
-                                                <Col xs={12} md key={`sub-${i}`}>
-                                                <Accordion className="curriculum__sub">
-                                                <Accordion.Item eventKey="0" className="curriculum__accordion">
-                                                <Accordion.Header>
-                                                    <div className="curriculum__imgs--sub">
-                                                        <img 
-                                                        src={certificate.img.logo}
-                                                        width={certificate.img.width}
-                                                        alt={certificate.img.alt}
-                                                        /> {' '}
-                                                    </div>
-                                                    {sub.name} 
-                                                </Accordion.Header>
-                                                <Accordion.Body>
-                                                    {sub.description}
-                                                </Accordion.Body>
-                                                </Accordion.Item>
-                                                </Accordion>
-                                            </Col>
-                                            ))
-                                        )
-                                        :
-                                        (certificate.description)
-                                    }
-                                    </Row>
+                                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+                                eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad
+                                minim veniam, quis nostrud exercitation ullamco laboris nisi ut
+                                aliquip ex ea commodo consequat. Duis aute irure dolor in
+                                reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla
+                                pariatur. Excepteur sint occaecat cupidatat non proident, sunt in
+                                culpa qui officia deserunt mollit anim id est laborum.
                                 </Accordion.Body>
                             </Accordion.Item>
-                            ))
-                        }
-                    </Accordion>
-
-                </Col>
-
-                <Col xs={10} md={4}>
-                    <Row>
-                    <Col xs={2}></Col>
-                    <Col>
-                    {
-                        information.map((info, i) => (
-                            <Card key={i} className="curriculum__info">
-                                <Card.Body className="text-center">
-                                    <Card.Subtitle className="mb-2 text-muted">
-                                        {info.title}
-                                    </Card.Subtitle>
-                                    <Card.Text>
-                                        <strong>
-                                            {info.knowledge}
-                                        </strong>
-                                    </Card.Text>
-                                </Card.Body>
-                            </Card>
-                        ))
-                    }
+                            <Accordion.Item eventKey="1">
+                                <Accordion.Header>Accordion Item #2</Accordion.Header>
+                                <Accordion.Body>
+                                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+                                eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad
+                                minim veniam, quis nostrud exercitation ullamco laboris nisi ut
+                                aliquip ex ea commodo consequat. Duis aute irure dolor in
+                                reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla
+                                pariatur. Excepteur sint occaecat cupidatat non proident, sunt in
+                                culpa qui officia deserunt mollit anim id est laborum.
+                                </Accordion.Body>
+                            </Accordion.Item>
+                            <Accordion.Item eventKey="2">
+                                <Accordion.Header>Accordion Item #2</Accordion.Header>
+                                <Accordion.Body>
+                                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+                                eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad
+                                minim veniam, quis nostrud exercitation ullamco laboris nisi ut
+                                aliquip ex ea commodo consequat. Duis aute irure dolor in
+                                reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla
+                                pariatur. Excepteur sint occaecat cupidatat non proident, sunt in
+                                culpa qui officia deserunt mollit anim id est laborum.
+                                </Accordion.Body>
+                            </Accordion.Item>
+                            <Accordion.Item eventKey="3">
+                                <Accordion.Header>Accordion Item #2</Accordion.Header>
+                                <Accordion.Body>
+                                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+                                eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad
+                                minim veniam, quis nostrud exercitation ullamco laboris nisi ut
+                                aliquip ex ea commodo consequat. Duis aute irure dolor in
+                                reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla
+                                pariatur. Excepteur sint occaecat cupidatat non proident, sunt in
+                                culpa qui officia deserunt mollit anim id est laborum.
+                                </Accordion.Body>
+                            </Accordion.Item>
+                        </Accordion>
                     </Col>
-                    </Row>
-                </Col>
-
-                <Col xs={1}></Col>
-            </Row>
-            <Row>
-                <Col></Col>
-                <Col className="d-grid gap-2">
-                    <Button>Descargar CV</Button>
-                </Col>
-                <Col></Col>
-            </Row>
+                </Row>
+            </Container>
         </section>
     )
 
