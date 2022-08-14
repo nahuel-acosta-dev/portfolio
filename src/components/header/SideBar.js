@@ -16,17 +16,10 @@ const SideBar = () => {
     return(
         <nav className="sidebar">
         {!collapse ?
-            <div className="sidebar__collapse" 
-            onMouseEnter={() => setShowButton(true)}
-            onMouseLeave={() => setShowButton(false)}>
-                {showButton ?
+            <div className="sidebar__collapse" >
                 <Button variant="danger" onClick={() => setCollapse(true)}>   
-                    <span className="bi bi-arrow-90deg-right"></span>   
+                    <span className="bi bi-list"></span>   
                 </Button>
-                :
-                <Button variant="danger sidebar__button" onClick={() => setCollapse(true)}>      
-                </Button>
-                }
             </div>
             :
             <ul className="sidebar__social">
@@ -64,7 +57,7 @@ const SideBar = () => {
                     </a>
                 </li>
                 <li>
-                    <a className="bi bi-arrow-90deg-left sidebar__enytpo 
+                    <a className="bi bi-list sidebar__enytpo 
                         entypo-collapse btn btn-link" onClick={() => setCollapse(false)}>
                         <span className="sidebar__name">Esconder</span>
                     </a>

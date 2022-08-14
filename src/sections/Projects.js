@@ -15,7 +15,7 @@ const Projects = () =>{
                     <Col>
                         <Container>
                             <Row>
-                                <Col xs={12} className="projects__card">
+                                <Col xs={12} className="projects__card projects__one">
                                     <Row>
                                         <Col>
                                             <Project img={sixlives} alt="imagen sixlives"/>

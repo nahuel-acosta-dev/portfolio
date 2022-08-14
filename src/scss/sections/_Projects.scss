@@ -1,4 +1,6 @@
 .projects{
+    min-height: 100vh;
+    padding-top: 8%;
     .projects__card{
         border-radius: 50px;
         background: linear-gradient(90.21deg, $red -5.91%, $purple 111.58%);
@@ -7,4 +9,12 @@
         color: $white;
     }
     
+}
+
+@mixin projects-responsive-height-sm($margin-top){
+    .projects{
+        .projects__one{
+            margin-top: $margin-top;
+        }
+    }
 }

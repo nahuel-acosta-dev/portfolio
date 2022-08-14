@@ -11,7 +11,8 @@ import useScreenSize from '../hooks/useScreenSize';
 
 const Home = () =>{
     const {width, height} = useScreenSize();
-    const [waitingPosition, setWaitingPosition] = useState();
+    const [waitingPosition, setWaitingPosition] = useState(false);
+    const [phoneMode, setPhoneMode] = useState(false);
     const [show, setShow] = useState(false);
 
     //en caso de querer hacer click para desplegar informacion
@@ -23,7 +24,13 @@ const Home = () =>{
     }
 
     useEffect(() => {
-        setTimeout(() => setWaitingPosition(true), 7500)
+        if(width < 576){
+            setPhoneMode(true)
+            setTimeout(() => setWaitingPosition(true), 1500);
+        }
+        else{
+            setTimeout(() => setWaitingPosition(true), 7500);
+        }
     }, [])
     return(
         <section className="home" id="home">
@@ -34,7 +41,12 @@ const Home = () =>{
                         <Col>
                             <div className={`home__cont ${waitingPosition && "home__expanded"}` }
                             onClick={e => getPosition(e)}
-                            style={waitingPosition ? {left: `44vw`, animation: 'none'}: ({})}>
+                            style={waitingPosition && !phoneMode ? 
+                                {
+                                    left: `44vw`, animation: 'none'
+                                } 
+                                : 
+                                ({})}>
                                 <div className="home__circle">
                                 </div>
                                     <Row className="home__contacts text-center">

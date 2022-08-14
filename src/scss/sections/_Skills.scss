@@ -11,12 +11,12 @@
     background: $color;
     top: $position;
     z-index: $z-index;
-
 }
 
 .skills{
     color: $white;
     min-height: 110vh;
+    padding-top: 10%;
     .bg, .bg2{
         width: 100%;
         height: 100%;
@@ -33,42 +33,46 @@
         background-color: #2a5f98;
         clip-path: polygon(63% 69%, 100% 9%, 100% 100%, 5% 100%);
     }
-.skills__cont{
-    height: auto;
-    .skills__dev{
-        list-style-type: none;
-        perspective: 1000px;
-        li{
-            height: 10rem;
-            @include perspective;
-            mix-blend-mode: multiply;
-            &:hover{
-                transform: rotateY(-22deg) rotateX(7deg) scale(1.03);
-                transition: transform .4s ease-out;
-                z-index: 3;
-                mix-blend-mode: normal;
-             }
-            &:nth-child(1){
-                padding-top: 8%;
-                @include card-design($red, -105px, 2);
-                top: -105px;
-                z-index: 2;
-            }
-            &:nth-child(2){
-                margin-top: 30px;
-                padding-top: 8%;
-                padding-bottom: 20%;
-                @include card-design($blue, auto, 1);
-            }
-            &:nth-child(3){
-                margin-top: 85px;
-                padding-top: 8%;
-                padding-bottom: 20%;
-                @include card-design(rgb(168, 101, 231), 105px, auto);
-            }
+    .skills__cont{
+        height: auto;
+        .skills__title{
+            font-size: 2.5rem;
+            font-weight: bold;
         }
+        .skills__dev{
+            list-style-type: none;
+            perspective: 1000px;
+            li{
+                height: 10rem;
+                @include perspective;
+                mix-blend-mode: multiply;
+                &:hover{
+                    transform: rotateY(-22deg) rotateX(7deg) scale(1.03);
+                    transition: transform .4s ease-out;
+                    z-index: 3;
+                    mix-blend-mode: normal;
+                }
+                &:nth-child(1){
+                    padding-top: 8%;
+                    @include card-design($red, -105px, 2);
+                    top: -105px;
+                    z-index: 2;
+                }
+                &:nth-child(2){
+                    margin-top: 30px;
+                    padding-top: 8%;
+                    padding-bottom: 20%;
+                    @include card-design($blue, auto, 1);
+                }
+                &:nth-child(3){
+                    margin-top: 85px;
+                    padding-top: 8%;
+                    padding-bottom: 20%;
+                    @include card-design(rgb(168, 101, 231), 105px, auto);
+                }
+            }
 
-    }
+        }
 }
 }
 
@@ -84,5 +88,10 @@
         }
     }
 
-@mixin skills-responsive-sm{
+@mixin skills-responsive-md{
+    .skills__dev{
+        margin-top: 5.5rem;
+    }
+
 }
+

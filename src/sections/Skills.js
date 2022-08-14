@@ -11,7 +11,7 @@ import iconPython from '../image/icons/python.svg';
 import iconDjango from '../image/icons/django.svg';
 import iconMysql from '../image/icons/mysql.svg';
 
-const Skills = ({children}) =>{
+const Skills = () =>{
 
     return(
         <section className="skills" id="skills">
@@ -21,7 +21,7 @@ const Skills = ({children}) =>{
                 <Row className="skills__cont align-self-center align-justify-content-center">
                         <Col md={1}/>
                         <Col sm={12} md>
-                            <p>Más de 12 años de experiencia en línea como desarrollador y diseñador</p>
+                            <h2 className="skills__title">Sobre Mi</h2>
                             <p>Mi enfoque en estos días está en el desarrollo front-end, pero tengo 
                                 experiencia en diseño. Mi experiencia en 
                                 ambos campos conduce a mejores experiencias de usuario en menos tiempo.</p>

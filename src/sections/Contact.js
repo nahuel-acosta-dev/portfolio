@@ -37,7 +37,7 @@ const Contact = () =>{
                                         placeholder="Mensaje" />
                                     </Form.Group>
                                         <Button className="contact__btn" variant="dark" size="lg" type="submit">
-                                            <span>enviar</span>
+                                            <span>Enviar</span>
                                         </Button>
                                     </Form>
                             </Col>

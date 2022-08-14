@@ -40,15 +40,12 @@
             animation: girar 20s linear infinite;
             animation-direction: alternate;
         }
-        .home__contact{
-            margin-top: 20%;
-        }
     }
     .home__expanded{
         @include expanded
     }
     .home__contacts{
-        margin-top: 10%;
+        margin-top: 20%;
         .home__icon{
             &:hover{
                 animation:vibrate .5s infinite;
@@ -98,8 +95,15 @@
 
 @mixin home-responsive-sm{
     .home{
-        .home__texts{
-            padding-top: 10%;
+        .home__cont{
+            left: 24vw;
+            animation: none;
         }
+    }
+}
+
+@mixin home-responsive-height-sm{
+    .home{
+        min-height: 150vh;
     }
 }

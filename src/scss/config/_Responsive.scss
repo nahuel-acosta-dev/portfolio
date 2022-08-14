@@ -18,6 +18,7 @@ $xxl: 1400px;
 @media all and (max-width: $md){
     @include header-responsive-md;
     @include contact-responsive-md;
+    @include skills-responsive-md;
 }
 
 @media all and (min-width:$sm ) and (max-width: $md){
@@ -35,10 +36,23 @@ $xxl: 1400px;
 //1- Section
 ////////////////////////////////
 @include home-responsive-sm;
-@include skills-responsive-sm;
+@include skills-responsive-md;
 @include curriculum-responsive-sm;
  ////////////////////////////////
 //2- Pages
 ////////////////////////////////
 
+}
+
+@media all and (max-height: 576px){
+    @include projects-responsive-height-sm(20%);
+    @include home-responsive-height-sm;
+}
+
+@media all and (max-height: 500px){
+    @include projects-responsive-height-sm(40%);
+}
+
+@media all and (max-height: 500px){
+    @include projects-responsive-height-sm(90%);
 }
