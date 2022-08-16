@@ -1,13 +1,13 @@
 import React, {useEffect} from 'react';
 import Portfolio from './pages/Portfolio';
-import AOS from 'aos';
+//import AOS from 'aos';
 
 const App = () => {
     
-    useEffect(() => {
+    {/*useEffect(() => {
         AOS.init();
         AOS.refresh();
-      }, []);
+      }, []);*/}
 
     return (
     <>

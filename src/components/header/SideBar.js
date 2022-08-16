@@ -37,22 +37,17 @@ const SideBar = () => {
                     </a>
                 </li>
                 <li>
-                    <a className="bi bi-brush sidebar__enytpo entypo-gplus" href="#projects">
+                    <a className="bi bi-brush sidebar__enytpo entypo-projects" href="#projects">
                         <span className="sidebar__name">Proyectos</span>
                     </a>
                 </li>
-                {/*<li>
-                    <a className="bi bi-clipboard2 sidebar__enytpo entypo-dribbble" href="#curriculum">
-                        <span className="sidebar__name">CV</span>
-                    </a>
-                </li>*/}
                 <li>
-                    <a className="bi bi-chat sidebar__enytpo entypo-dropbox" href="#contact">
+                    <a className="bi bi-chat sidebar__enytpo entypo-contact" href="#contact">
                         <span className="sidebar__name">Contáctame</span>
                     </a>
                 </li>
                 <li>
-                    <a className="bi bi-box-arrow-in-down sidebar__enytpo entypo-evernote" href="https://">
+                    <a className="bi bi-box-arrow-in-down sidebar__enytpo entypo-cv" href="https://">
                         <span className="sidebar__name">Descargar CV</span>
                     </a>
                 </li>

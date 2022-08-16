@@ -1,17 +1,80 @@
 import React from 'react';
 import Row from 'react-bootstrap/Row';
 import Col from 'react-bootstrap/Col';
+import Icon from '../components/icons/Icon';
 import Container from 'react-bootstrap/Container';
-import iconHtml from '../image/icons/html.svg';
-import iconCss from '../image/icons/css.svg';
 import iconJavascript from '../image/icons/javascript.svg';
 import iconBootstrap from '../image/icons/bootstrap.svg';
+import iconSass from '../image/icons/sass.svg';
 import iconReact from '../image/icons/react.svg';
 import iconPython from '../image/icons/python.svg';
 import iconDjango from '../image/icons/django.svg';
 import iconMysql from '../image/icons/mysql.svg';
+import iconPostman from '../image/icons/postman.svg'
+import iconGit from '../image/icons/git.svg';
+import iconNpm from '../image/icons/npm.svg';
 
 const Skills = () =>{
+
+    const iconsFrontEnd = [
+        {
+            img: iconBootstrap,
+            name: 'Bootstrap',
+            width: '40'
+        },
+        {
+            img: iconSass,
+            name: 'Sass',
+            width: '40'
+        },
+        {
+            img: iconJavascript,
+            name: 'Javascript',
+            width: '40'
+        },
+        {
+            img: iconReact,
+            name: 'React',
+            width: '40'
+        }
+
+    ]
+
+    const iconsBackEnd = [
+        {
+            img: iconPython,
+            name: 'Python',
+            width: '40'
+        },
+        {
+            img: iconDjango,
+            name: 'Django',
+            width: '40'
+        },
+        {
+            img: iconMysql,
+            name: 'Mysql',
+            width: '40'
+        },
+    ]
+
+    const iconsOthers = [
+        {
+            img: iconPostman,
+            name: 'Postman',
+            width: '40'
+        },
+        {
+            img: iconNpm,
+            name: 'Npm',
+            width: '40'
+        },
+        {
+            img: iconGit,
+            name: 'Git',
+            width: '40'
+        },
+    ]
 
     return(
         <section className="skills" id="skills">
@@ -22,50 +85,62 @@ const Skills = () =>{
                         <Col md={1}/>
                         <Col sm={12} md>
                             <h2 className="skills__title">Sobre Mi</h2>
-                            <p>Mi enfoque en estos días está en el desarrollo front-end, pero tengo 
-                                experiencia en diseño. Mi experiencia en 
-                                ambos campos conduce a mejores experiencias de usuario en menos tiempo.</p>
+                            <p>
+                                Enfocado en el desarrollo web Back-End y con
+                                algunas habilidades del lado Front-End.
+                                Con muchas ganas de seguir sumando la mayor cantidad de conocimientos
+                                posibles y obtener una oportunidad en el mundo IT.
+                                Abierto a nuevas experiencias y desafíos.
+                            </p>
                         </Col>
                         <Col sm={12} md>
                             <ul className="skills__dev">
                                 <li>
-                                    <Row>
-                                        <Col xs={2}>
-                                            <img src={iconPython} 
-                                            alt="icon python"
-                                            width="50"
-                                            />
-                                        </Col>
-                                        <Col>
-                                            <span>
-                                                <strong>AppCoins</strong>
-                                                <p>In publishing and graphic design, 
-                                                Lorem ipsum is a placeholder </p>
-                                            </span>
-                                        </Col>
-                                    </Row>
+                                <Container>
+                                        <Row>
+                                            <strong>Front-End</strong>
+                                            {
+                                                iconsFrontEnd.map((iconFrontEnd, i) =>(
+                                                    <Icon key={i} 
+                                                    img={iconFrontEnd.img} 
+                                                    name={iconFrontEnd.name}
+                                                    width={iconFrontEnd.width}
+                                                    />
+                                                ))
+                                            }
+                                        </Row>
+                                    </Container>
                                 </li>
                                 <li>
-                                    <img src={iconDjango} 
-                                    alt="icon django"
-                                    width="50"
-                                    />
-                                    <span>
-                                        <strong>AppCoins</strong>
-                                        <p>In publishing and graphic design, 
-                                        Lorem ipsum is a placeholder </p>
-                                    </span>
+                                    <Container>
+                                        <Row>
+                                            <strong>Back-End</strong>
+                                            {
+                                                iconsBackEnd.map((iconsBackEnd, i) =>(
+                                                    <Icon key={i} 
+                                                    img={iconsBackEnd.img} 
+                                                    name={iconsBackEnd.name}
+                                                    width={iconsBackEnd.width}
+                                                    />
+                                                ))
+                                            }
+                                        </Row>
+                                    </Container>
                                 </li>
                                 <li>
-                                    <img src={iconMysql} 
-                                    alt="icon Mysql"
-                                    width="50"
-                                    />
-                                    <span>
-                                        <strong>AppCoins</strong>
-                                        <p>In publishing and graphic design, 
-                                        Lorem ipsum is a placeholder </p>
-                                    </span>
+                                    <Container>
+                                        <Row>
+                                        <strong>Otras Herramientas</strong>
+                                            {
+                                                iconsOthers.map((iconOthers, i) => (
+                                                    <Icon key={i} 
+                                                    img={iconOthers.img}
+                                                    name={iconOthers.name}
+                                                    width={iconOthers.width}/>
+                                                ))
+                                            }
+                                        </Row>
+                                    </Container>
                                 </li>
                             </ul>
                         </Col>

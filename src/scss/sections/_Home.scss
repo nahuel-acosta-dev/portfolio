@@ -13,6 +13,7 @@
     @include background-cover-center;
     z-index: 2;
     .home__cont{
+        font-weight: bold;
         padding-top: 1%;
         overflow: hidden;
         position: absolute;
@@ -56,6 +57,10 @@
                 transition-delay: 0s;
             }
         }
+    }
+    .home__cv{
+        margin-top: 20px;
+        width: 80%;
     }
     }
     

@@ -91,6 +91,19 @@
 @mixin skills-responsive-md{
     .skills__dev{
         margin-top: 5.5rem;
+        img{
+            width: 40px;
+        }
+    }
+
+}
+
+@mixin skills-responsive-sm{
+    .skills__dev{
+        margin-top: 5.5rem;
+        img{
+            width: 30px;
+        }
     }
 
 }

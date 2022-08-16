@@ -36,8 +36,8 @@ $xxl: 1400px;
 //1- Section
 ////////////////////////////////
 @include home-responsive-sm;
-@include skills-responsive-md;
 @include curriculum-responsive-sm;
+@include skills-responsive-sm;
  ////////////////////////////////
 //2- Pages
 ////////////////////////////////
@@ -55,4 +55,5 @@ $xxl: 1400px;
 
 @media all and (max-height: 500px){
     @include projects-responsive-height-sm(90%);
+    
 }

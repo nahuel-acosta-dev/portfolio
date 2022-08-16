@@ -1,0 +1,11 @@
+.footer{
+    background-color: $black;
+    height: 40vh;
+    color: $white;
+    display: flex;
+    align-items: center;
+    .footer__title{
+        font-size: 1.2rem;
+        font-weight: bold;
+    }
+}

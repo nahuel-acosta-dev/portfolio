@@ -8,6 +8,7 @@ import Phone from '../image/icons/whatsap_green.svg';
 import Linkedin from '../image/icons/linkedin_blue.svg';
 import Github from '../image/icons/github_blue.svg';
 import useScreenSize from '../hooks/useScreenSize';
+import Button from 'react-bootstrap/Button';
 
 const Home = () =>{
     const {width, height} = useScreenSize();
@@ -89,8 +90,11 @@ const Home = () =>{
                                                 />
                                             </a>
                                     </Col>
-                                        <p>Portafolio</p>
-                                        <p>Descargar CV</p>
+                                        <div className="d-flex align-items-center justify-content-center">
+                                        <Button size="sm" className="home__cv">
+                                            <span>Descargar CV</span>
+                                        </Button>
+                                        </div>
                                     </Row>
                                 </div>
                         </Col>

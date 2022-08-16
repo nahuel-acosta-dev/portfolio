@@ -2,7 +2,7 @@ import React from 'react';
 import PropTypes from 'prop-types';
 import Button from 'react-bootstrap/Button';
 
-const Project = ({img, alt, width}) => {
+const Project = ({img, alt, width, url}) => {
 
     return(
         <figure className="project figure d-flex align-content-center project__imgbx">
@@ -10,9 +10,12 @@ const Project = ({img, alt, width}) => {
             className="figure-img img-fluid rounded"
             width={width}
             alt={alt}/>
-            <div className="project__txt">
+            <a className="project__txt text-decoration-none" 
+                href={url} target="_blank" 
+                rel="noreferrer"
+            >
                 <Button className="project__link"><span>ir al sitio</span></Button>
-            </div>
+            </a>
         </figure>
     )
 
