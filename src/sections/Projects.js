@@ -103,7 +103,7 @@ const Projects = () =>{
                                     <Row>
                                         <Col className="d-flex align-content-center">
                                             <Project img={simply} alt="imagen simply neon" width="300px"
-                                            url="https://nahuel43038.github.io/OnePage-SimplyNeon.io/"
+                                            url="https://github.com/nahuel43038/OnePage-SimplyNeon.io"
                                             />
                                         </Col>
                                         <Col className="d-flex align-content-center">
