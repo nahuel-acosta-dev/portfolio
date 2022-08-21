@@ -3,7 +3,7 @@ import CodoACodo from '../image/certificates/logocodoacodo.png';
 import Oracle from '../image/certificates/one.png';
 import Cs50 from '../image/certificates/harvard.svg';
 
-const certificates2021 = [
+export const certificates2021 = [
     {
         "institute": "CS50 HARVARD UNIVERSITY",
         "title": "Desarrollo web con Javascript y Phyton",
@@ -34,7 +34,7 @@ const certificates2021 = [
 
 ]
 
-const certificates2022 = [
+export const certificates2022 = [
     {
         "institute": "ONE Oracle Next Education",
         "title": "",
@@ -63,5 +63,3 @@ const certificates2022 = [
         "tags": ['HTML/CSS', 'JavaScript', 'Java', 'MySql']
     }
 ]
-
-export {certificates2021, certificates2022};

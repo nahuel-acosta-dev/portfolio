@@ -4,7 +4,7 @@ import Col from 'react-bootstrap/Col';
 import Container from 'react-bootstrap/Container';
 import Accordion from 'react-bootstrap/Accordion';
 
-import {certificates2021, certificates2022} from '../utils/certificates';
+import {certificates2021, certificates2022} from '../constants/index';
 import CertificateCard from '../components/cards/CertificateCard';
 
 

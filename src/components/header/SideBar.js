@@ -1,6 +1,7 @@
 import React, {useState, useEffect} from 'react';
 import Button from 'react-bootstrap/Button';
 import useScreenSize from '../../hooks/useScreenSize';
+import cv from '../../nahuel_acosta_cv.pdf';
 
 const SideBar = () => {
     const [collapse, setCollapse] = useState(true);
@@ -47,7 +48,10 @@ const SideBar = () => {
                     </a>
                 </li>
                 <li>
-                    <a className="bi bi-box-arrow-in-down sidebar__enytpo entypo-cv" href="https://">
+                    <a className="bi bi-box-arrow-in-down sidebar__enytpo entypo-cv" href={cv}
+                     alt="curriculum de nahuel acosta" 
+                     rel="noopener noreferrer" target="_blank"
+                    >
                         <span className="sidebar__name">Descargar CV</span>
                     </a>
                 </li>
