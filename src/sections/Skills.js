@@ -86,8 +86,7 @@ const Skills = () =>{
                         <Col sm={12} md>
                             <h2 className="skills__title">Sobre Mi</h2>
                             <p>
-                                Enfocado en el desarrollo web Back-End y con
-                                algunas habilidades del lado Front-End.
+                                Con habilidades tanto en el Front-End como en el Back-End.
                                 Con muchas ganas de seguir sumando la mayor cantidad de conocimientos
                                 posibles y obtener una oportunidad en el mundo IT.
                                 Abierto a nuevas experiencias y desafíos.
