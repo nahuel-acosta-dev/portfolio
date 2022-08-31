@@ -54,7 +54,7 @@ const Home = () =>{
                                         <p>Brian Nahuel Acosta</p>
                                         <p>Programador Web</p>
                                         <Col className="home__icon">
-                                        <a href="https://github.com/nahuel43038" target="_blank" rel="noreferrer">
+                                        <a href="https://github.com/nahuel-acosta-dev" target="_blank" rel="noreferrer">
                                             <img 
                                                 src={Github}
                                                 width="30px"

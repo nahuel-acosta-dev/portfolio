@@ -89,7 +89,7 @@ const Projects = () =>{
                                                         ))
                                                         }
                                                     </Row>
-                                                    <a href="https://github.com/nahuel43038/one-alura-challenge2.io"
+                                                    <a href="https://github.com/nahuel-acosta-dev/one-alura-challenge2.io"
                                                     target="_blank" rel="noreferrer" 
                                                     className="text-decoration-none projects__code"
                                                     >
@@ -103,7 +103,7 @@ const Projects = () =>{
                                     <Row>
                                         <Col className="d-flex align-content-center">
                                             <Project img={simply} alt="imagen simply neon" width="300px"
-                                            url="https://github.com/nahuel43038/OnePage-SimplyNeon.io"
+                                            url="https://github.com/nahuel-acosta-dev/OnePage-SimplyNeon.io"
                                             />
                                         </Col>
                                         <Col className="d-flex align-content-center">
@@ -119,7 +119,7 @@ const Projects = () =>{
                                                         ))
                                                         }
                                                     </Row>
-                                                    <a href="https://nahuel43038.github.io/OnePage-SimplyNeon.io/"
+                                                    <a href="https://nahuel-acosta-dev.github.io/OnePage-SimplyNeon.io/"
                                                     target="_blank" rel="noreferrer" 
                                                     className="text-decoration-none projects__code">
                                                         Codigo
