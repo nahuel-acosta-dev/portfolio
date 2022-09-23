@@ -13,6 +13,8 @@
     z-index: $z-index;
 }
 
+$padding-top: 8%;
+
 .skills{
     color: $white;
     min-height: 110vh;
@@ -53,21 +55,24 @@
                     mix-blend-mode: normal;
                 }
                 &:nth-child(1){
-                    padding-top: 8%;
+                    padding-top: $padding-top;
                     @include card-design($red, -105px, 2);
                     top: -105px;
                     z-index: 2;
+                    font-size: $font-icon;
                 }
                 &:nth-child(2){
                     margin-top: 30px;
-                    padding-top: 8%;
+                    padding-top: $padding-top;
                     padding-bottom: 20%;
+                    font-size: $font-icon;
                     @include card-design($blue, auto, 1);
                 }
                 &:nth-child(3){
                     margin-top: 85px;
-                    padding-top: 8%;
+                    padding-top: $padding-top;
                     padding-bottom: 20%;
+                    font-size: $font-icon;
                     @include card-design(rgb(168, 101, 231), 105px, auto);
                 }
             }
@@ -88,12 +93,44 @@
         }
     }
 
+    @mixin skills-responsive-xl{
+        .skills__dev{
+            li{
+                &:nth-child(1){
+                    padding-top: 2%!important;
+                }
+                &:nth-child(2){
+                    padding-top: 8%!important;
+                }
+                &:nth-child(3){
+                    padding-top: 8%!important;
+                }
+            }
+        }
+    }
+
+@mixin skills-responsive-lg{
+    .skills__dev{
+        li{
+            &:nth-child(1){
+                padding-top: 2%!important;
+            }
+            &:nth-child(2){
+                padding-top: 7%!important;
+            }
+            &:nth-child(3){
+                padding-top: 6%!important;
+            }
+        }
+    }
+}
+
 @mixin skills-responsive-md{
     .skills__dev{
         margin-top: 5.5rem;
-        img{
-            width: 40px;
-        }
+            li{
+                &:nth-child(3){margin-top: 70px!important;}
+            }
     }
 
 }

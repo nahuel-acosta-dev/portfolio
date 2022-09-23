@@ -1,18 +1,23 @@
+$xxl: 1400px;
+$xl: 1200px;
 $lg: 992px;
 $md: 767px;
 $sm: 576px;
-$xxl: 1400px;
+
 
 @media all and (max-width: $xxl){
     @include skills-responsive-xxl;
  }
 
-@media all and (max-width: $lg){
+ @media all and(min-width:$lg ) and (max-width: $xl){
+    //@include skills-responsive-xl;
+ }
 
+@media all and (max-width: $lg){
 }
 
 @media all and (min-width:$md ) and (max-width: $lg){
-    
+    //@include skills-responsive-lg;
 }
 
 @media all and (max-width: $md){
